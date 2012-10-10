@@ -1,4 +1,4 @@
-ceylon-testsuite
+capedwarf-testsuite
 ================
 
-Ceylon Testsuite
+CapeDwarf Testsuite
