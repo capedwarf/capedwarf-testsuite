@@ -27,6 +27,7 @@
                         <include>org/jboss/test/**/*TestCase.java</include>
                     </includes>
                     <systemProperties>
+                        <basedir>${basedir}</basedir>
                         <version.jboss.as>${version.jboss.as}</version.jboss.as>
                     </systemProperties>
                 </configuration>
