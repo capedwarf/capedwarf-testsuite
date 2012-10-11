@@ -38,6 +38,8 @@
         <version.org.picketlink.consolidated.social>2.0.0.Beta1</version.org.picketlink.consolidated.social>
         <version.org.openid4java>0.9.5</version.org.openid4java>
         <version.rhino.js>1.7R2</version.rhino.js>
+        <version.junit>4.10</version.junit>
+        <version.arquillian>1.0.1.Final</version.arquillian>
 
         <!-- Needs to be set explicitely to match with org.jacoco:org.jacoco.ant - see testsuite. -->
         <version.xml.maven.plugin>1.0</version.xml.maven.plugin>
@@ -56,6 +58,8 @@
                 <version>${version.jboss.as}</version>
                 <type>pom</type>
             </dependency>
+
+            <!-- CapeDwarf -->
 
             <dependency>
                 <groupId>org.jboss.capedwarf</groupId>
@@ -213,7 +217,176 @@
                 <version>${version.org.jboss.capedwarf}</version>
             </dependency>
 
+            <!-- CapeDwarf Tests -->
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-appidentity</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-admin</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-blobstore</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-capabilities</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-channel</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-datastore</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-files</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-images</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-log</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-mail</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-memcache</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-multitenancy</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-oauth</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-prospectivesearch</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-quota</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-search</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-tasks</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-urlfetch</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-users</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-xmpp</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
             <!-- External Dependencies -->
+
+            <dependency>
+                <groupId>org.jboss.as</groupId>
+                <artifactId>jboss-as-arquillian-container-managed</artifactId>
+                <version>${version.jboss.as}</version>
+                <scope>test</scope>
+            </dependency>
 
             <dependency>
                 <groupId>org.jboss.maven.plugins</groupId>
@@ -411,6 +584,23 @@
                 <groupId>com.google.appengine</groupId>
                 <artifactId>appengine-api-1.0-sdk</artifactId>
                 <version>${version.com.google.appengine}</version>
+            </dependency>
+
+            <!-- ARQ -->
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${version.junit}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.arquillian</groupId>
+                <artifactId>arquillian-bom</artifactId>
+                <type>pom</type>
+                <scope>import</scope>
+                <version>${version.arquillian}</version>
             </dependency>
 
         </dependencies>
