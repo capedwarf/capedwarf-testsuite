@@ -3,4 +3,6 @@
 *.iws
 *.iml
 target/
+tests/target/
+tests/transaction.log
 

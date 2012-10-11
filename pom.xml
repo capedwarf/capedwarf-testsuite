@@ -30,7 +30,7 @@
         <version.org.datanucleus.jdo>3.0</version.org.datanucleus.jdo>
         <version.org.hibernate.search>4.2.0.Beta1</version.org.hibernate.search>
         <version.org.infinispan>5.2.0.Beta1</version.org.infinispan>
-        <version.org.jboss.maven.transformer>1.0.0.Beta3</version.org.jboss.maven.transformer>
+        <version.org.jboss.maven.transformer>1.0.0.Beta4</version.org.jboss.maven.transformer>
         <version.org.jivesoftware.smack>3.1.0</version.org.jivesoftware.smack>
         <version.org.picketbox>4.0.13.Final</version.org.picketbox>
         <version.org.picketbox.picketbox-commons>1.0.0.final</version.org.picketbox.picketbox-commons>
