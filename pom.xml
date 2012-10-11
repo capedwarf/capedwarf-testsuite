@@ -59,6 +59,13 @@
                 <type>pom</type>
             </dependency>
 
+            <dependency>
+                <groupId>org.jboss.capedwarf.testsuite</groupId>
+                <artifactId>integrate-cd</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+            </dependency>
+
             <!-- CapeDwarf -->
 
             <dependency>

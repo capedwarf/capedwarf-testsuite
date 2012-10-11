@@ -19,6 +19,29 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.5.1</version>
+                <executions>
+                    <execution>
+                        <id>unpack-dependencies</id>
+                        <phase>process-test-classes</phase>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <includeGroupIds>org.jboss.capedwarf.blue</includeGroupIds>
+                            <includeTypes>test-jar</includeTypes>
+                            <includeScope>test</includeScope>
+                            <excludes>arquillian.xml</excludes>
+                            <outputDirectory>${project.build.directory}/test-classes</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.12.1</version>
                 <configuration>
@@ -27,8 +50,7 @@
                         <include>org/jboss/test/**/*TestCase.java</include>
                     </includes>
                     <systemProperties>
-                        <basedir>${basedir}</basedir>
-                        <version.jboss.as>${version.jboss.as}</version.jboss.as>
+                        <jboss.dir>${basedir}/../build-as/target/jboss-as-${version.jboss.as}</jboss.dir>
                     </systemProperties>
                 </configuration>
             </plugin>
@@ -36,6 +58,12 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>org.jboss.capedwarf.testsuite</groupId>
+            <artifactId>integrate-cd</artifactId>
+            <type>pom</type>
+        </dependency>
+
         <dependency>
             <groupId>org.jboss.arquillian.junit</groupId>
             <artifactId>arquillian-junit-container</artifactId>

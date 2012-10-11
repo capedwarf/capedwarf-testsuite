@@ -183,7 +183,6 @@
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-appidentity</artifactId>
-
         </dependency>
 
         <dependency>
@@ -195,7 +194,6 @@
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-bytecode</artifactId>
-
             <exclusions>
                 <exclusion>
                     <groupId>org.jboss.maven.plugins</groupId>

@@ -5,11 +5,12 @@
 
     <defaultProtocol type="Servlet 2.5"/>
 
-    <container qualifier="jbossas-managed" default="true">
+    <container qualifier="jboss" default="true">
         <configuration>
-            <property name="jbossHome">${basedir}/../build-as/target/jboss-as-${version.jboss.as}</property>
+            <property name="jbossHome">${jboss.dir}</property>
             <property name="serverConfig">standalone-capedwarf.xml</property>
-            <property name="javaVmArguments">-Xmx512m -XX:MaxPermSize=128m -b ${ip.binding:192.168.30.249}</property>
+            <property name="javaVmArguments">-Xmx512m -XX:MaxPermSize=128m -Djboss.bind.address=${ip.binding:192.168.30.249}</property>
+            <property name="allowConnectingToRunningServer">true</property>
         </configuration>
     </container>
 </arquillian>
