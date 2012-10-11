@@ -48,6 +48,7 @@
     <modules>
         <module>build-as</module>
         <module>integrate-cd</module>
+        <module>tests</module>
     </modules>
 
     <dependencyManagement>
