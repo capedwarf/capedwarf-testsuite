@@ -40,5 +40,6 @@
         <module name="org.jboss.jts"/>
         <module name="org.jboss.netty"/>
         <module name="javax.resource.api"/>
+        <module name="org.jboss.logging"/>
     </dependencies>
 </module>

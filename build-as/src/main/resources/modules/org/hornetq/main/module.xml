@@ -39,5 +39,7 @@
         <module name="org.jboss.as.messaging"/>
         <!-- https://issues.jboss.org/browse/AS7-4936  this is to avoid an issue on IBM JDK -->
         <module name="sun.jdk"/>
+        <module name="org.jboss.logging"/>
+        <module name="org.jgroups"/>
     </dependencies>
 </module>

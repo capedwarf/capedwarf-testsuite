@@ -12,11 +12,11 @@
 
     <groupId>org.jboss.capedwarf.testsuite</groupId>
     <artifactId>integrate-cd</artifactId>
-    <name>CapeDwarf - Integrate AS</name>
+    <name>CapeDwarf - Integrate AS + CapeDwarf</name>
     <packaging>pom</packaging>
 
     <properties>
-        <jboss.dir>../build-as/target/jboss-as-${version.jboss.as}</jboss.dir>
+        <jboss.dir>${basedir}/../build-as/target/jboss-as-${version.jboss.as}</jboss.dir>
     </properties>
     <build>
         <plugins>
@@ -34,7 +34,7 @@
                         <configuration>
                             <target>
                                 <ant antfile="build.xml" inheritRefs="true">
-                                    <target name="${ant.target}}"/>
+                                    <target name="${ant.target}"/>
                                 </ant>
                             </target>
                         </configuration>
@@ -341,21 +341,9 @@
 
     <profiles>
         <profile>
-            <id>default</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <ant.target>noop</ant.target>
-            </properties>
-        </profile>
-
-        <profile>
             <id>testsuite</id>
             <activation>
-                <property>
-                    <name>testsuite</name>
-                </property>
+                <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
                 <ant.target>all</ant.target>

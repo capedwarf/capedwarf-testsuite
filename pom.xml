@@ -53,7 +53,7 @@
             <dependency>
                 <groupId>org.jboss.capedwarf.testsuite</groupId>
                 <artifactId>build-as</artifactId>
-                <version>${project.version}</version>
+                <version>${version.jboss.as}</version>
                 <type>pom</type>
             </dependency>
 

@@ -34,16 +34,8 @@
         <copy todir="${output.dir}">
             <fileset dir="src/main/resources">
                 <include name="standalone/configuration/**.xml"/>
-                <include name="bin/**.sh"/>
-                <include name="bin/**.bat"/>
             </fileset>
         </copy>
-        <chmod perm="755">
-            <fileset dir="${output.dir}/bin">
-                <include name="**/capedwarf*.sh"/>
-                <include name="**/capedwarf*.bat"/>
-            </fileset>
-        </chmod>
     </target>
 
     <target name="modules" >

@@ -155,20 +155,10 @@
 
     <profiles>
         <profile>
-            <id>default</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <ant.target>noop</ant.target>
-            </properties>
-        </profile>
-
-        <profile>
             <id>normal</id>
             <activation>
                 <property>
-                    <name>testsuite</name>
+                    <name>!minimalistic</name>
                 </property>
             </activation>
 
