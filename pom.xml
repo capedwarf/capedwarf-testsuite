@@ -30,6 +30,7 @@
         <version.org.datanucleus.jdo>3.0</version.org.datanucleus.jdo>
         <version.org.hibernate.search>4.2.0.Beta1</version.org.hibernate.search>
         <version.org.infinispan>5.2.0.Beta1</version.org.infinispan>
+        <version.org.jboss.jandex>1.0.3.Final</version.org.jboss.jandex>
         <version.org.jboss.maven.transformer>1.0.0.Beta4</version.org.jboss.maven.transformer>
         <version.org.jivesoftware.smack>3.1.0</version.org.jivesoftware.smack>
         <version.org.picketbox>4.0.13.Final</version.org.picketbox>
@@ -40,9 +41,14 @@
         <version.rhino.js>1.7R2</version.rhino.js>
         <version.junit>4.10</version.junit>
         <version.arquillian>1.0.1.Final</version.arquillian>
-
         <!-- Needs to be set explicitely to match with org.jacoco:org.jacoco.ant - see testsuite. -->
         <version.xml.maven.plugin>1.0</version.xml.maven.plugin>
+        <!-- Maven plugins -->
+        <version.maven.compiler>2.5.1</version.maven.compiler>
+        <version.maven.dependency>2.5.1</version.maven.dependency>
+        <version.maven.jar>2.2</version.maven.jar>
+        <version.maven.release>2.3.2</version.maven.release>
+        <version.maven.surefire>2.12.1</version.maven.surefire>
     </properties>
 
     <modules>

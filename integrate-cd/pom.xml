@@ -44,7 +44,7 @@
                     <dependency>
                         <groupId>org.jboss</groupId>
                         <artifactId>jandex</artifactId>
-                        <version>1.0.3.Final</version>
+                        <version>${version.org.jboss.jandex}</version>
                     </dependency>
                     <dependency>
                         <groupId>org.apache.ant</groupId>
