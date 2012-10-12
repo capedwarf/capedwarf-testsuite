@@ -948,6 +948,10 @@
                 <maven-resource group="org.jboss.as" artifact="jboss-as-transactions"/>
             </module-def>
 
+            <module-def name="org.jboss.as.version">
+                <maven-resource group="org.jboss.as" artifact="jboss-as-version"/>
+            </module-def>
+
             <module-def name="org.jboss.as.web">
                 <maven-resource group="org.jboss.as" artifact="jboss-as-web"/>
                 <maven-resource group="org.jboss.web" artifact="jasper-jdt"/>
