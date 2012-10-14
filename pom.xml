@@ -28,6 +28,7 @@
         <version.org.datanucleus.appengine>2.1.0-final</version.org.datanucleus.appengine>
         <version.org.datanucleus.cache>3.1.0</version.org.datanucleus.cache>
         <version.org.datanucleus.jdo>3.0</version.org.datanucleus.jdo>
+        <version.org.datanucleus.jta>1.1.1</version.org.datanucleus.jta>
         <version.org.hibernate.search>4.2.0.Beta1</version.org.hibernate.search>
         <version.org.infinispan>5.2.0.Beta1</version.org.infinispan>
         <version.org.jboss.jandex>1.0.3.Final</version.org.jboss.jandex>
@@ -39,8 +40,12 @@
         <version.org.picketlink.consolidated.social>2.0.0.Beta1</version.org.picketlink.consolidated.social>
         <version.org.openid4java>0.9.5</version.org.openid4java>
         <version.rhino.js>1.7R2</version.rhino.js>
+        <version.javax.jpa2>1.0.1.Final</version.javax.jpa2>
+        <version.org.jboss.spec.javax.servlet.api>1.0.0.Final</version.org.jboss.spec.javax.servlet.api>
         <version.junit>4.10</version.junit>
         <version.arquillian>1.0.1.Final</version.arquillian>
+        <version.shrinkwrap>1.1.0</version.shrinkwrap>
+        <version.shrinkwrap.maven-resolver>1.1.0-alpha-3</version.shrinkwrap.maven-resolver>
         <!-- Needs to be set explicitely to match with org.jacoco:org.jacoco.ant - see testsuite. -->
         <version.xml.maven.plugin>1.0</version.xml.maven.plugin>
         <!-- Maven plugins -->
@@ -215,6 +220,12 @@
 
             <dependency>
                 <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-testsuite</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
                 <artifactId>capedwarf-urlfetch</artifactId>
                 <version>${version.org.jboss.capedwarf}</version>
             </dependency>
@@ -364,6 +375,14 @@
             <dependency>
                 <groupId>org.jboss.capedwarf.blue</groupId>
                 <artifactId>capedwarf-tasks</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-testsuite</artifactId>
                 <version>${version.org.jboss.capedwarf}</version>
                 <type>test-jar</type>
                 <scope>test</scope>
@@ -605,6 +624,45 @@
                 <groupId>com.google.appengine</groupId>
                 <artifactId>appengine-api-1.0-sdk</artifactId>
                 <version>${version.com.google.appengine}</version>
+            </dependency>
+
+            <!-- Testsuite -->
+
+            <dependency>
+                <groupId>org.hibernate.javax.persistence</groupId>
+                <artifactId>hibernate-jpa-2.0-api</artifactId>
+                <version>${version.javax.jpa2}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.geronimo.specs</groupId>
+                <artifactId>geronimo-jta_1.1_spec</artifactId>
+                <version>${version.org.datanucleus.jta}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.spec.javax.servlet</groupId>
+                <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+                <version>${version.org.jboss.spec.javax.servlet.api}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.shrinkwrap</groupId>
+                <artifactId>shrinkwrap-api</artifactId>
+                <version>${version.shrinkwrap}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.shrinkwrap.resolver</groupId>
+                <artifactId>shrinkwrap-resolver-api-maven</artifactId>
+                <version>${version.shrinkwrap.maven-resolver}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.shrinkwrap.resolver</groupId>
+                <artifactId>shrinkwrap-resolver-impl-maven</artifactId>
+                <version>${version.shrinkwrap.maven-resolver}</version>
             </dependency>
 
             <!-- ARQ -->
