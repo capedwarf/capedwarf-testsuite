@@ -45,7 +45,7 @@
         <version.junit>4.10</version.junit>
         <version.arquillian>1.0.1.Final</version.arquillian>
         <version.shrinkwrap>1.1.0</version.shrinkwrap>
-        <version.shrinkwrap.maven-resolver>1.1.0-alpha-3</version.shrinkwrap.maven-resolver>
+        <version.shrinkwrap.maven-resolver>2.0.0-alpha-4</version.shrinkwrap.maven-resolver>
         <!-- Needs to be set explicitely to match with org.jacoco:org.jacoco.ant - see testsuite. -->
         <version.xml.maven.plugin>1.0</version.xml.maven.plugin>
         <!-- Maven plugins -->
@@ -467,13 +467,6 @@
                 <groupId>com.google.appengine.orm</groupId>
                 <artifactId>datanucleus-appengine</artifactId>
                 <version>${version.org.datanucleus.appengine}</version>
-                <exclusions>
-                    <exclusion>
-                        <!-- Force this just in case -->
-                        <groupId>org.jboss.maven.plugins</groupId>
-                        <artifactId>arquillian-transformer</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <dependency>
@@ -651,6 +644,12 @@
                 <groupId>org.jboss.shrinkwrap</groupId>
                 <artifactId>shrinkwrap-api</artifactId>
                 <version>${version.shrinkwrap}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.shrinkwrap.resolver</groupId>
+                <artifactId>shrinkwrap-resolver-api</artifactId>
+                <version>${version.shrinkwrap.maven-resolver}</version>
             </dependency>
 
             <dependency>

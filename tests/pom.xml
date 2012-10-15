@@ -45,6 +45,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${version.maven.surefire}</version>
                 <configuration>
+                    <runOrder>alphabetical</runOrder>
                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
                     <includes>
                         <include>org/jboss/test/**/*TestCase.java</include>
@@ -301,6 +302,12 @@
         <dependency>
             <groupId>org.jboss.shrinkwrap</groupId>
             <artifactId>shrinkwrap-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.shrinkwrap.resolver</groupId>
+            <artifactId>shrinkwrap-resolver-api</artifactId>
             <scope>test</scope>
         </dependency>
 
