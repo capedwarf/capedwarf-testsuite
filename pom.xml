@@ -286,6 +286,14 @@
 
             <dependency>
                 <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-common</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
                 <artifactId>capedwarf-datastore</artifactId>
                 <version>${version.org.jboss.capedwarf}</version>
                 <type>test-jar</type>
