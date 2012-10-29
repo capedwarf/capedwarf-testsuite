@@ -75,7 +75,7 @@
     <target name="create-ext-content">
         <mkdir dir="${output.dir}/modules/org/jboss/integration/ext-content/main/bundled"/>
         <copy file="${org.jboss.seam.integration:jboss-seam-int-jbossas:jar}"
-              tofile="${output.dir}/modules/org/jboss/integration/ext-content/main/bundled/jboss-seam-int.jar"/>
+tofile="${output.dir}/modules/org/jboss/integration/ext-content/main/bundled/jboss-seam-int.jar"/>
 
         <!-- Copy the EJB specific schemas to the JBOSS_HOME/docs/schema folder -->
         <unzip src="${org.jboss.metadata:jboss-metadata-ejb:jar}" dest="${output.dir}/docs/schema/">
@@ -928,7 +928,31 @@
                 <maven-resource group="org.jboss.as" artifact="jboss-as-osgi-service"/>
             </module-def>
 
-            <module-def name="org.jboss.as.sar">
+            <module-def name="org.jboss.as.osgi.http">
+            <maven-resource group="org.jboss.as" artifact="jboss-as-osgi-http"/>
+        </module-def>
+
+     	<module-def name="org.jboss.as.osgi.jmx">
+            <maven-resource group="org.jboss.as" artifact="jboss-as-osgi-jmx"/>
+        </module-def>
+
+     	<module-def name="org.jboss.as.osgi.jpa">
+            <maven-resource group="org.jboss.as" artifact="jboss-as-osgi-jpa"/>
+        </module-def>
+
+     	<module-def name="org.jboss.as.osgi.jta">
+            <maven-resource group="org.jboss.as" artifact="jboss-as-osgi-jta"/>
+        </module-def>
+
+     	<module-def name="org.jboss.as.osgi.naming">
+            <maven-resource group="org.jboss.as" artifact="jboss-as-osgi-naming"/>
+        </module-def>
+
+     	<module-def name="org.jboss.as.osgi.web">
+            <maven-resource group="org.jboss.as" artifact="jboss-as-osgi-web"/>
+        </module-def>
+
+        <module-def name="org.jboss.as.sar">
                 <maven-resource group="org.jboss.as" artifact="jboss-as-sar"/>
             </module-def>
 
@@ -1023,11 +1047,11 @@
             </module-def>
 
             <module-def name="org.jboss.jts">
-                <maven-resource group="org.jboss.jbossts" artifact="jbossjts"/>
+                <maven-resource group="org.jboss.jbossts.jts" artifact="jbossjts-jacorb"/>
             </module-def>
 
             <module-def name="org.jboss.jts.integration">
-                <maven-resource group="org.jboss.jbossts" artifact="jbossjts-integration"/>
+                <maven-resource group="org.jboss.jbossts.jts" artifact="jbossjts-integration"/>
             </module-def>
 
             <module-def name="org.jboss.metadata">
@@ -1217,8 +1241,7 @@
             </module-def>
 
             <module-def name="org.jboss.xts">
-                <maven-resource group="org.jboss.jbossts" artifact="jbossxts"/>
-                <maven-resource group="org.jboss.jbossts" artifact="jbossxts-api"/>
+                <maven-resource group="org.jboss.jbossts.xts" artifact="jbossxts"/>
                 <maven-resource group="org.jboss.jbossts" artifact="jbosstxbridge"/>
             </module-def>
 
@@ -1325,8 +1348,7 @@
     </target>
 
 
-
-    <target name="clean-target">
+<target name="clean-target">
         <delete dir="${output.dir}"/>
     </target>
 
