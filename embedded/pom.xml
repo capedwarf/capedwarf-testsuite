@@ -11,8 +11,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.jboss.capedwarf.testsuite</groupId>
-    <artifactId>tests-cd</artifactId>
-    <name>CapeDwarf - Testing</name>
+    <artifactId>embedded-cd</artifactId>
+    <name>CapeDwarf - Embedded</name>
     <packaging>jar</packaging>
 
     <build>
@@ -93,41 +93,6 @@
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-appidentity</artifactId>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-admin</artifactId>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-blobstore</artifactId>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-capabilities</artifactId>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-channel</artifactId>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-common</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
@@ -135,106 +100,93 @@
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-datastore</artifactId>
-            <type>test-jar</type>
+            <artifactId>capedwarf-testsuite</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-files</artifactId>
+            <artifactId>capedwarf-testsuite</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
 
+        <!-- CD Blue Testsuite -->
+
         <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-images</artifactId>
-            <type>test-jar</type>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-1.0-sdk</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-log</artifactId>
-            <type>test-jar</type>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.datanucleus</groupId>
+            <artifactId>datanucleus-core</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-mail</artifactId>
-            <type>test-jar</type>
+            <groupId>org.datanucleus</groupId>
+            <artifactId>datanucleus-api-jpa</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.geronimo.specs</groupId>
+                    <artifactId>geronimo-jpa_3.0_spec</artifactId>
+                </exclusion>
+            </exclusions>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-memcache</artifactId>
-            <type>test-jar</type>
+            <groupId>com.google.appengine.orm</groupId>
+            <artifactId>datanucleus-appengine</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-multitenancy</artifactId>
-            <type>test-jar</type>
+            <groupId>javax.jdo</groupId>
+            <artifactId>jdo-api</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-oauth</artifactId>
-            <type>test-jar</type>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-prospectivesearch</artifactId>
-            <type>test-jar</type>
+            <groupId>org.jboss.spec.javax.servlet</groupId>
+            <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.shrinkwrap</groupId>
+            <artifactId>shrinkwrap-api</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-quota</artifactId>
-            <type>test-jar</type>
+            <groupId>org.jboss.shrinkwrap.resolver</groupId>
+            <artifactId>shrinkwrap-resolver-api</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-search</artifactId>
-            <type>test-jar</type>
+            <groupId>org.jboss.shrinkwrap.resolver</groupId>
+            <artifactId>shrinkwrap-resolver-api-maven</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-tasks</artifactId>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-urlfetch</artifactId>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-users</artifactId>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-xmpp</artifactId>
-            <type>test-jar</type>
+            <groupId>org.jboss.shrinkwrap.resolver</groupId>
+            <artifactId>shrinkwrap-resolver-impl-maven</artifactId>
             <scope>test</scope>
         </dependency>
 

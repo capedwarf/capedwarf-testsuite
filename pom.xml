@@ -59,6 +59,7 @@
 
     <modules>
         <module>build-as</module>
+        <module>embedded</module>
         <module>integrate-cd</module>
         <module>tests</module>
     </modules>
