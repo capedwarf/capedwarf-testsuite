@@ -226,19 +226,6 @@
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-tools</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
-            <artifactId>capedwarf-tools</artifactId>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-users</artifactId>
             <type>test-jar</type>
             <scope>test</scope>

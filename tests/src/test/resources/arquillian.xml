@@ -9,7 +9,7 @@
         <configuration>
             <property name="jbossHome">${jboss.dir}</property>
             <property name="serverConfig">standalone-capedwarf.xml</property>
-            <property name="javaVmArguments">-Xmx512m -XX:MaxPermSize=128m -Djboss.bind.address=${ip.binding:192.168.30.249}</property>
+            <property name="javaVmArguments">-Xmx512m -XX:MaxPermSize=128m -Djboss.bind.address=${ip.binding:192.168.30.235}</property>
             <property name="allowConnectingToRunningServer">true</property>
         </configuration>
     </container>
