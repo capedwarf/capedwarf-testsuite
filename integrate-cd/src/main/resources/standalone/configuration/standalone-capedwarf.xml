@@ -213,11 +213,10 @@
             </cache-container>
             <cache-container name="capedwarf" default-cache="default">
                 <transport lock-timeout="60000"/>
-                <!-- distributed-cache name="default" owners="2" mode="ASYNC" indexing="LOCAL" -->
                 <distributed-cache name="default" mode="ASYNC">
                     <transaction mode="NON_XA"/>
-                    <eviction strategy="NONE"/>
-                    <file-store preload="true" purge="false"/>
+                    <eviction strategy="LIRS" max-entries="100000"/>
+                    <file-store preload="false" purge="false"/>
                     <indexing index="LOCAL">
                         <!-- Remove jndiname, backend
                         <property name="hibernate.search.default.indexmanager" value="org.infinispan.query.indexmanager.InfinispanIndexManager" />
@@ -232,27 +231,28 @@
                 </distributed-cache>
                 <replicated-cache name="data" mode="SYNC">
                     <transaction mode="NON_XA"/>
-                    <eviction strategy="NONE"/>
-                    <file-store preload="true" purge="false"/>
+                    <eviction strategy="LIRS" max-entries="10000"/>
+                    <file-store preload="false" purge="false"/>
                 </replicated-cache>
                 <replicated-cache name="metadata" mode="SYNC">
                     <transaction mode="NON_XA"/>
-                    <eviction strategy="NONE"/>
-                    <file-store preload="true" purge="false"/>
+                    <eviction strategy="LIRS" max-entries="10000"/>
+                    <file-store preload="false" purge="false"/>
                 </replicated-cache>
                 <replicated-cache name="memcache" mode="ASYNC">
                     <transaction mode="NON_XA" locking="PESSIMISTIC"/>
-                    <eviction strategy="NONE"/>
+                    <eviction strategy="LIRS" max-entries="10000"/>
+                    <file-store preload="false" purge="true"/>
                 </replicated-cache>
                 <distributed-cache name="dist" mode="ASYNC">
                     <transaction mode="NON_XA" locking="PESSIMISTIC"/>
-                    <eviction strategy="NONE"/>
-                    <file-store preload="true" purge="false"/>
+                    <eviction strategy="LIRS" max-entries="100000"/>
+                    <file-store preload="false" purge="false"/>
                 </distributed-cache>
                 <distributed-cache name="tasks" mode="ASYNC">
                     <transaction mode="NON_XA"/>
                     <eviction strategy="LIRS" max-entries="10000"/>
-                    <file-store preload="true" purge="false"/>
+                    <file-store preload="false" purge="false"/>
                     <indexing index="LOCAL">
                         <property name="hibernate.search.default.exclusive_index_use">false</property>
                         <property name="hibernate.search.default.directory_provider">infinispan</property>
@@ -265,7 +265,7 @@
                 <distributed-cache name="search" mode="ASYNC">
                     <transaction mode="NON_XA"/>
                     <eviction strategy="LIRS" max-entries="10000"/>
-                    <file-store preload="true" purge="false"/>
+                    <file-store preload="false" purge="false"/>
                     <indexing index="LOCAL">
                         <property name="hibernate.search.default.exclusive_index_use">false</property>
                         <property name="hibernate.search.default.directory_provider">infinispan</property>
@@ -278,7 +278,7 @@
                 <distributed-cache name="prospective_search" mode="ASYNC">
                     <transaction mode="NON_XA"/>
                     <eviction strategy="LIRS" max-entries="10000"/>
-                    <file-store preload="true" purge="false"/>
+                    <file-store preload="false" purge="false"/>
                     <indexing index="LOCAL">
                         <property name="hibernate.search.default.exclusive_index_use">false</property>
                         <property name="hibernate.search.default.directory_provider">infinispan</property>
@@ -290,17 +290,18 @@
                 </distributed-cache>
                 <replicated-cache name="LuceneIndexesMetadata" mode="SYNC">
                     <transaction mode="NONE"/>
-                    <eviction strategy="NONE"/>
+                    <eviction strategy="LIRS" max-entries="100000"/>
                     <file-store preload="true" purge="false"/>
                 </replicated-cache>
                 <replicated-cache name="LuceneIndexesData" mode="SYNC">
                     <transaction mode="NONE"/>
-                    <eviction strategy="NONE"/>
+                    <eviction strategy="LIRS" max-entries="100000"/>
                     <file-store preload="true" purge="false"/>
                 </replicated-cache>
                 <replicated-cache name="LuceneIndexesLocking" mode="SYNC">
                     <transaction mode="NONE"/>
-                    <eviction strategy="NONE"/>
+                    <eviction strategy="LIRS" max-entries="100000"/>
+                    <file-store preload="false" purge="true"/>
                 </replicated-cache>
             </cache-container>
         </subsystem>
