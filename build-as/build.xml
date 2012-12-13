@@ -521,8 +521,8 @@ tofile="${output.dir}/modules/org/jboss/integration/ext-content/main/bundled/jbo
                 <maven-resource group="org.jboss.spec.javax.xml.ws" artifact="jboss-jaxws-api_2.2_spec"/>
             </module-def>
 
-            <module-def name="org.jboss.jreadline">
-                <maven-resource group="org.jboss.jreadline" artifact="jreadline"/>
+            <module-def name="org.jboss.aesh">
+                <maven-resource group="org.jboss.aesh" artifact="aesh"/>
             </module-def>
 
             <module-def name="org.fusesource.jansi">
@@ -855,8 +855,7 @@ tofile="${output.dir}/modules/org/jboss/integration/ext-content/main/bundled/jbo
 
             <module-def name="org.jboss.as.jdr">
                 <maven-resource group="org.jboss.as" artifact="jboss-as-jdr"/>
-                <maven-resource group="org.jboss.as" artifact="jboss-as-sos"/>
-            </module-def>
+                </module-def>
 
             <module-def name="org.jboss.as.jpa">
                 <maven-resource group="org.jboss.as" artifact="jboss-as-jpa"/>
@@ -1282,10 +1281,6 @@ tofile="${output.dir}/modules/org/jboss/integration/ext-content/main/bundled/jbo
                 <maven-resource group="org.picketbox" artifact="picketbox"/>
                 <maven-resource group="org.picketbox" artifact="picketbox-infinispan"/>
                 <maven-resource group="org.picketbox" artifact="picketbox-commons"/>
-            </module-def>
-
-            <module-def name="org.python.jython.standalone">
-                <maven-resource group="org.python" artifact="jython-standalone"/>
             </module-def>
 
             <module-def name="org.slf4j.jcl-over-slf4j">
