@@ -101,6 +101,11 @@
         </dependency>
 
         <dependency>
+            <groupId>org.jboss.capedwarf.shared</groupId>
+            <artifactId>capedwarf-shared</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.jboss.capedwarf</groupId>
             <artifactId>jboss-as-capedwarf</artifactId>
         </dependency>

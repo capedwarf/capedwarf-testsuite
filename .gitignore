@@ -5,6 +5,9 @@
 target/
 tests/target/
 tests/transaction.log
+tools/target/
+tools/transaction.log
+embedded/target/
 embedded/transaction.log
-embedded/target
+embedded/server.log*
 
