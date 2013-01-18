@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
-        <version>9</version>
+        <version>10</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jboss.capedwarf.testsuite</groupId>
@@ -65,10 +65,7 @@
         <!-- Needs to be set explicitely to match with org.jacoco:org.jacoco.ant - see testsuite. -->
         <version.xml.maven.plugin>1.0</version.xml.maven.plugin>
         <!-- Maven plugins -->
-        <version.maven.compiler>2.5.1-jboss2</version.maven.compiler>
         <version.maven.dependency>2.5.1</version.maven.dependency>
-        <version.maven.jar>2.2</version.maven.jar>
-        <version.maven.release>2.3.2</version.maven.release>
         <version.maven.surefire>2.12.1</version.maven.surefire>
     </properties>
 
