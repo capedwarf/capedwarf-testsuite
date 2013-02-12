@@ -23,6 +23,7 @@
         <version.com.google.appengine>1.7.4</version.com.google.appengine>
         <version.com.google.guava>13.0.1</version.com.google.guava>
         <version.org.apache.ant>1.8.2</version.org.apache.ant>
+        <version.org.apache.httpcomponents>4.2.1</version.org.apache.httpcomponents>
         <version.org.apache.lucene>3.6.2</version.org.apache.lucene>
         <version.org.bouncycastle>1.47</version.org.bouncycastle>
         <version.org.codehaus.exec>1.2.1</version.org.codehaus.exec>
@@ -707,6 +708,18 @@
                 <groupId>jivesoftware</groupId>
                 <artifactId>smack</artifactId>
                 <version>${version.org.jivesoftware.smack}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${version.org.apache.httpcomponents}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>${version.org.apache.httpcomponents}</version>
             </dependency>
 
             <!-- GAE -->
