@@ -48,7 +48,7 @@
                     <runOrder>alphabetical</runOrder>
                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
                     <includes>
-                        <include>org/jboss/test/**/*TestCase.java</include>
+                        <include>org/jboss/test/**/*Test.java</include>
                     </includes>
                     <systemProperties>
                         <jboss.dir>${basedir}/../build-as/target/jboss-as-${version.jboss.as}</jboss.dir>
