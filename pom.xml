@@ -64,6 +64,8 @@
         <!-- Testing Iddx -->
         <version.com.google.api-client>1.11.0-beta</version.com.google.api-client>
         <version.com.google.api-services-bigquery>v2-rev33-1.8.0-beta</version.com.google.api-services-bigquery>
+        <!-- Testing Objectify -->
+        <version.objectify>4.0b1</version.objectify>
         <!-- Needs to be set explicitely to match with org.jacoco:org.jacoco.ant - see testsuite. -->
         <version.xml.maven.plugin>1.0</version.xml.maven.plugin>
         <!-- Maven plugins -->
@@ -869,6 +871,14 @@
                 <groupId>com.google.apis</groupId>
                 <artifactId>google-api-services-bigquery</artifactId>
                 <version>${version.com.google.api-services-bigquery}</version>
+            </dependency>
+
+            <!-- Objectify -->
+
+            <dependency>
+                <groupId>com.googlecode.objectify</groupId>
+                <artifactId>objectify</artifactId>
+                <version>${version.objectify}</version>
             </dependency>
 
             <!-- ARQ -->
