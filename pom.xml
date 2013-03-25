@@ -732,6 +732,12 @@
                 <version>${version.com.google.appengine}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>appengine-api-labs</artifactId>
+                <version>${version.com.google.appengine}</version>
+            </dependency>
+
             <!-- Testsuite -->
 
             <dependency>
