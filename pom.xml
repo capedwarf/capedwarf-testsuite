@@ -45,7 +45,7 @@
         <version.rhino.js>1.7R2</version.rhino.js>
         <version.javax.jpa2>1.0.1.Final</version.javax.jpa2>
         <version.org.jboss.spec.javax.servlet.api>1.0.0.Final</version.org.jboss.spec.javax.servlet.api>
-        <version.junit>4.10</version.junit>
+        <version.junit>4.11</version.junit>
         <version.arquillian>1.0.3.Final</version.arquillian>
         <version.shrinkwrap>1.1.2</version.shrinkwrap>
         <version.shrinkwrap.resolver>2.0.0-beta-3</version.shrinkwrap.resolver>
@@ -72,7 +72,7 @@
         <version.xml.maven.plugin>1.0</version.xml.maven.plugin>
         <!-- Maven plugins -->
         <version.maven.dependency>2.5.1</version.maven.dependency>
-        <version.maven.surefire>2.12.1</version.maven.surefire>
+        <version.maven.surefire>2.14.1</version.maven.surefire>
         <!-- Compiler configuration -->
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
