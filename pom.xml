@@ -27,7 +27,7 @@
         <version.org.apache.lucene>3.6.2</version.org.apache.lucene>
         <version.org.bouncycastle>1.47</version.org.bouncycastle>
         <version.org.codehaus.exec>1.2.1</version.org.codehaus.exec>
-        <version.org.hibernate.search>4.2.0.Final</version.org.hibernate.search>
+        <version.org.hibernate.search>4.3.0.Alpha1</version.org.hibernate.search>
         <version.org.jgroups>3.3.0.Beta3</version.org.jgroups>
         <version.org.infinispan>5.3.0.Alpha1</version.org.infinispan>
         <version.org.jboss.jandex>1.0.3.Final</version.org.jboss.jandex>
