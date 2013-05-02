@@ -344,6 +344,11 @@
 			<artifactId>guice</artifactId>
 		</dependency>
         
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
+
         <dependency>
             <groupId>jivesoftware</groupId>
             <artifactId>smack</artifactId>
