@@ -9,7 +9,6 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.jboss.capedwarf.testsuite</groupId>
     <artifactId>build-as</artifactId>
     <name>CapeDwarf - Application Server Build</name>
     <packaging>pom</packaging>

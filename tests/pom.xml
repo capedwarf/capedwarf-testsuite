@@ -10,7 +10,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.jboss.capedwarf.testsuite</groupId>
     <artifactId>tests-cd</artifactId>
     <name>CapeDwarf - Testing</name>
     <packaging>jar</packaging>

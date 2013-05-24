@@ -10,7 +10,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.jboss.capedwarf.testsuite</groupId>
     <artifactId>integrate-cd</artifactId>
     <name>CapeDwarf - Integrate AS + CapeDwarf</name>
     <packaging>pom</packaging>
@@ -111,13 +110,20 @@
         </dependency>
 
         <dependency>
+            <groupId>org.jboss.capedwarf</groupId>
+            <artifactId>jboss-as-capedwarf-workaround</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-api-1.0-sdk</artifactId>
         </dependency>
+
         <dependency>
             <groupId>javax.jdo</groupId>
             <artifactId>jdo-api</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcmail-jdk15on</artifactId>
