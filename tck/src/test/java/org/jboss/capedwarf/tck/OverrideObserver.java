@@ -26,6 +26,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
 
@@ -52,7 +53,8 @@ import org.jboss.arquillian.test.spi.event.suite.TestEvent;
  * <arquillian>
  * <extension qualifier="override">
  * <property name="expression">.*</property>
- * <property name="methods">org.acme.foo.ListTest#testStrFilter</property>
+ * <property name="methods">org.acme.foo.ListTest#testStrFilter,org.bar.boo.QwertTest#testFoo</property>
+ * <property name="methods_1">org.acme.foo.ListTest#testIntFilter</property>
  * </extension>
  * </arquillian>
  *
@@ -148,15 +150,24 @@ public class OverrideObserver {
     }
 
     private Set<String> readMethodsFromConfiguration() {
+        final Set<String> set = new HashSet<>();
         ArquillianDescriptor descriptor = desciptorInst.get();
         for (ExtensionDef def : descriptor.getExtensions()) {
             if (def.getExtensionName().equalsIgnoreCase(EXTENSION_NAME)) {
-                String exp = def.getExtensionProperties().get(EXTENSION_PROPERTY_METHODS);
+                Map<String,String> properties = def.getExtensionProperties();
+
+                String exp = properties.get(EXTENSION_PROPERTY_METHODS);
                 if (exp != null) {
-                    return new HashSet<String>(Arrays.asList(exp.split(",")));
+                    set.addAll(Arrays.asList(exp.split(",")));
+                }
+
+                for (String key : properties.keySet()) {
+                    if (key.startsWith(EXTENSION_PROPERTY_METHODS + "_")) {
+                        set.add(properties.get(key));
+                    }
                 }
             }
         }
-        return Collections.emptySet();
+        return set;
     }
 }
