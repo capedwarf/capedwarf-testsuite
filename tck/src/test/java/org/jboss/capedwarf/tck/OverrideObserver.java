@@ -85,13 +85,12 @@ public class OverrideObserver {
         execute(context, "remote");
     }
 
-    private boolean execute(EventContext<? extends ExecutionEvent> context, String phase) {
+    private void execute(EventContext<? extends ExecutionEvent> context, String phase) {
         if (shouldPerformExecution(context.getEvent())) {
             context.proceed();
-            return true;
         } else {
             log.info("Ignore test [" + phase + "]: " + toFqn(context.getEvent()));
-            return false;
+            testResultProducer.set(new TestResult(TestResult.Status.SKIPPED));
         }
     }
 
