@@ -24,7 +24,6 @@ package org.jboss.capedwarf.tck;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
@@ -32,18 +31,17 @@ import java.util.logging.Logger;
 
 import org.jboss.arquillian.config.descriptor.api.ArquillianDescriptor;
 import org.jboss.arquillian.config.descriptor.api.ExtensionDef;
+import org.jboss.arquillian.container.test.impl.execution.event.ExecutionEvent;
+import org.jboss.arquillian.container.test.impl.execution.event.LocalExecutionEvent;
+import org.jboss.arquillian.container.test.impl.execution.event.RemoteExecutionEvent;
 import org.jboss.arquillian.core.api.Instance;
 import org.jboss.arquillian.core.api.InstanceProducer;
 import org.jboss.arquillian.core.api.annotation.Inject;
 import org.jboss.arquillian.core.api.annotation.Observes;
 import org.jboss.arquillian.core.spi.EventContext;
+import org.jboss.arquillian.test.spi.TestMethodExecutor;
 import org.jboss.arquillian.test.spi.TestResult;
-import org.jboss.arquillian.test.spi.TestResult.Status;
 import org.jboss.arquillian.test.spi.annotation.TestScoped;
-import org.jboss.arquillian.test.spi.event.suite.After;
-import org.jboss.arquillian.test.spi.event.suite.Before;
-import org.jboss.arquillian.test.spi.event.suite.Test;
-import org.jboss.arquillian.test.spi.event.suite.TestEvent;
 
 /**
  * /**
@@ -79,21 +77,15 @@ public class OverrideObserver {
     private String expression = null;
     private Set<String> methods;
 
-    public void before(@Observes(precedence = 1000) EventContext<Before> context) {
-        execute(context, "before");
+    public void localTest(@Observes(precedence = 1000) EventContext<LocalExecutionEvent> context) {
+        execute(context, "local");
     }
 
-    public void after(@Observes(precedence = 1000) EventContext<After> context) {
-        execute(context, "after");
+    public void remoteTest(@Observes(precedence = 1000) EventContext<RemoteExecutionEvent> context) {
+        execute(context, "remote");
     }
 
-    public void test(@Observes(precedence = 1000) EventContext<Test> context) {
-        if (execute(context, "test") == false) {
-            testResultProducer.set(new TestResult(Status.SKIPPED));
-        }
-    }
-
-    private boolean execute(EventContext<? extends TestEvent> context, String phase) {
+    private boolean execute(EventContext<? extends ExecutionEvent> context, String phase) {
         if (shouldPerformExecution(context.getEvent())) {
             context.proceed();
             return true;
@@ -103,18 +95,19 @@ public class OverrideObserver {
         }
     }
 
-    private boolean shouldPerformExecution(TestEvent event) {
+    private boolean shouldPerformExecution(ExecutionEvent event) {
         return !shouldCancelExecution(event);
     }
 
-    private boolean shouldCancelExecution(TestEvent event) {
+    private boolean shouldCancelExecution(ExecutionEvent event) {
         String fqn = toFqn(event);
         return fqn.matches(getExpression()) || getMethods().contains(fqn);
     }
 
-    private String toFqn(TestEvent event) {
-        Object test = event.getTestInstance();
-        Method method = event.getTestMethod();
+    private String toFqn(ExecutionEvent event) {
+        TestMethodExecutor executor = event.getExecutor();
+        Object test = executor.getInstance();
+        Method method = executor.getMethod();
         return test.getClass().getName() + "#" + method.getName();
     }
 
