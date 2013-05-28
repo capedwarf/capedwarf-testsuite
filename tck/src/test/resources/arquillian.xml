@@ -15,7 +15,11 @@
     </container>
 
     <extension qualifier="override">
-        <property name="methods">com.google.appengine.tck.datastore.ListTest#testStrFilter</property>
+        <property name="methods_1">com.google.appengine.tck.datastore.ListTest#testStrFilter</property>
+        <property name="methods_2">com.google.appengine.tck.datastore.QueryBasicsTest#testDefaultSortOrderIsDefinedByIndexDefinition</property>
+        <property name="methods_3">com.google.appengine.tck.datastore.QueryFilteringOnCollectionPropertyTest#queryWithMultipleInequalityFiltersOnMultivaluedPropertyReturnsNothing</property>
+        <property name="methods_4">com.google.appengine.tck.datastore.QueryFilteringOnCollectionPropertyTest#queryWithNotEqualFilter</property>
+        <property name="methods_5">com.google.appengine.tck.datastore.QueryTest#testWithPropertyProjection</property>
     </extension>
 
 </arquillian>
