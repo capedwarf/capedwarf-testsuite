@@ -15,9 +15,8 @@
     <packaging>pom</packaging>
 
     <properties>
-        <version.jboss.as>7.2.0.Final</version.jboss.as>
-        <version.org.jboss.xnio>3.0.7.GA</version.org.jboss.xnio>
-
+        <version.jboss.wildfly>8.0.0.Beta1</version.jboss.wildfly>
+        <version.org.jboss.xnio>3.1.0.CR7</version.org.jboss.xnio>
         <version.org.jboss.capedwarf.shared>1.0.0-SNAPSHOT</version.org.jboss.capedwarf.shared>
         <version.org.jboss.as.capedwarf>1.0.0-SNAPSHOT</version.org.jboss.as.capedwarf>
         <version.org.jboss.capedwarf>1.0.0-SNAPSHOT</version.org.jboss.capedwarf>
@@ -34,9 +33,9 @@
         <version.org.bouncycastle>1.47</version.org.bouncycastle>
         <version.org.codehaus.exec>1.2.1</version.org.codehaus.exec>
         <version.org.hibernate.search>4.3.0.Final</version.org.hibernate.search>
-        <version.org.jgroups>3.3.0.Final</version.org.jgroups>
+        <version.org.jgroups>3.3.2.Final</version.org.jgroups>
         <version.org.infinispan>5.3.0.Final</version.org.infinispan>
-        <version.org.jboss.jandex>1.0.3.Final</version.org.jboss.jandex>
+        <version.org.jboss.jandex>1.1.0.Alpha1</version.org.jboss.jandex>
         <version.org.jboss.maven.transformer>1.0.0.Beta5</version.org.jboss.maven.transformer>
         <version.org.jivesoftware.smack>3.1.0</version.org.jivesoftware.smack>
         <version.javax.jai>1.1.1</version.javax.jai>
@@ -56,7 +55,7 @@
 
         <version.rhino.js>1.7R2</version.rhino.js>
         <version.javax.jpa2>1.0.1.Final</version.javax.jpa2>
-        <version.org.jboss.spec.javax.servlet.api>1.0.0.Final</version.org.jboss.spec.javax.servlet.api>
+        <version.org.jboss.spec.javax.servlet.api>1.0.0.Beta1</version.org.jboss.spec.javax.servlet.api>
         <version.junit>4.11</version.junit>
         <version.arquillian>1.1.1.Final</version.arquillian>
         <version.arquillian.drone>1.2.0.Final</version.arquillian.drone>
@@ -174,13 +173,13 @@
 
             <dependency>
                 <groupId>org.jboss.capedwarf</groupId>
-                <artifactId>jboss-as-capedwarf</artifactId>
+                <artifactId>wildfly-capedwarf</artifactId>
                 <version>${version.org.jboss.as.capedwarf}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.jboss.capedwarf</groupId>
-                <artifactId>jboss-as-capedwarf-workaround</artifactId>
+                <artifactId>wildfly-capedwarf-workaround</artifactId>
                 <version>${version.org.jboss.as.capedwarf}</version>
             </dependency>
 
@@ -785,9 +784,9 @@
             </dependency>
 
             <dependency>
-                <groupId>org.jboss.as</groupId>
-                <artifactId>jboss-as-arquillian-container-managed</artifactId>
-                <version>${version.jboss.as}</version>
+                <groupId>org.wildfly</groupId>
+                <artifactId>wildfly-arquillian-container-managed</artifactId>
+                <version>${version.jboss.wildfly}</version>
                 <scope>test</scope>
             </dependency>
 
@@ -1056,7 +1055,7 @@
 
             <dependency>
                 <groupId>org.jboss.spec.javax.servlet</groupId>
-                <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+                <artifactId>jboss-servlet-api_3.1_spec</artifactId>
                 <version>${version.org.jboss.spec.javax.servlet.api}</version>
                 <scope>provided</scope>
             </dependency>

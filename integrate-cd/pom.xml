@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <jboss.dir>${basedir}/../build-as/target/jboss-as-${version.jboss.as}</jboss.dir>
+        <jboss.dir>${basedir}/../build-as/target/wildfly-${version.jboss.wildfly}</jboss.dir>
     </properties>
     <build>
         <plugins>
@@ -106,12 +106,12 @@
 
         <dependency>
             <groupId>org.jboss.capedwarf</groupId>
-            <artifactId>jboss-as-capedwarf</artifactId>
+            <artifactId>wildfly-capedwarf</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf</groupId>
-            <artifactId>jboss-as-capedwarf-workaround</artifactId>
+            <artifactId>wildfly-capedwarf-workaround</artifactId>
         </dependency>
 
         <dependency>

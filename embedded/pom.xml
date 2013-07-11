@@ -50,7 +50,7 @@
                         <include>org/jboss/test/**/*Test.java</include>
                     </includes>
                     <systemProperties>
-                        <jboss.dir>${basedir}/../build-as/target/jboss-as-${version.jboss.as}</jboss.dir>
+                        <jboss.dir>${basedir}/../build-as/target/wildfly-${version.jboss.wildfly}</jboss.dir>
                     </systemProperties>
                 </configuration>
             </plugin>
@@ -83,8 +83,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.as</groupId>
-            <artifactId>jboss-as-arquillian-container-managed</artifactId>
+            <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-arquillian-container-managed</artifactId>
             <scope>test</scope>
         </dependency>
 
@@ -179,7 +179,7 @@
 
         <dependency>
             <groupId>org.jboss.spec.javax.servlet</groupId>
-            <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+            <artifactId>jboss-servlet-api_3.1_spec</artifactId>
             <scope>provided</scope>
         </dependency>
 
