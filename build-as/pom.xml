@@ -25,8 +25,8 @@
                             <goal>unpack-dependencies</goal>
                         </goals>
                         <configuration>
-                            <includeGroupIds>org.jboss.as</includeGroupIds>
-                            <includeArtifactIds>jboss-as-dist</includeArtifactIds>
+                            <includeGroupIds>org.wildfly</includeGroupIds>
+                            <includeArtifactIds>wildfly-dist</includeArtifactIds>
                             <outputDirectory>
                                 ${project.build.directory}
                             </outputDirectory>
@@ -39,10 +39,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.jboss.as</groupId>
-            <artifactId>jboss-as-dist</artifactId>
+            <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-dist</artifactId>
             <type>zip</type>
-            <version>${version.jboss.as}</version>
+            <version>${version.jboss.wildfly}</version>
         </dependency>
 
     </dependencies>
