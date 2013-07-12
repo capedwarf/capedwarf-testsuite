@@ -124,6 +124,13 @@
 
         <dependency>
             <groupId>com.google.appengine.tck</groupId>
+            <artifactId>appengine-tck-images</artifactId>
+            <scope>test</scope>
+            <type>test-jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.appengine.tck</groupId>
             <artifactId>appengine-tck-logservice</artifactId>
             <scope>test</scope>
             <type>test-jar</type>
