@@ -809,6 +809,18 @@
                 <version>${version.metainf}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.jboss.as</groupId>
+                <artifactId>jboss-as-clustering-infinispan</artifactId>
+                <version>${version.jboss.as}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.as</groupId>
+                <artifactId>jboss-as-clustering-jgroups</artifactId>
+                <version>${version.jboss.as}</version>
+            </dependency>
+
             <!-- GAE -->
 
             <dependency>
