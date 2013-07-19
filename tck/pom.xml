@@ -172,6 +172,20 @@
         </dependency>
 
         <dependency>
+            <groupId>com.google.appengine.tck</groupId>
+            <artifactId>misc</artifactId>
+            <scope>test</scope>
+            <type>test-jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.appengine.tck</groupId>
+            <artifactId>sql</artifactId>
+            <scope>test</scope>
+            <type>test-jar</type>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <scope>test</scope>

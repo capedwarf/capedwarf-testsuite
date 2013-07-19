@@ -594,6 +594,20 @@
                 <type>test-jar</type>
             </dependency>
 
+            <dependency>
+                <groupId>com.google.appengine.tck</groupId>
+                <artifactId>misc</artifactId>
+                <version>${version.com.google.appengine.tck}</version>
+                <type>test-jar</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.appengine.tck</groupId>
+                <artifactId>sql</artifactId>
+                <version>${version.com.google.appengine.tck}</version>
+                <type>test-jar</type>
+            </dependency>
+
             <!-- External Dependencies -->
 
             <dependency>
