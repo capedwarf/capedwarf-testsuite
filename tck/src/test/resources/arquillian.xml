@@ -5,7 +5,7 @@
 
     <defaultProtocol type="Servlet 2.5"/>
 
-    <container qualifier="jboss" default="true">
+    <container qualifier="capedwarf" default="true">
         <configuration>
             <property name="jbossHome">${jboss.dir}</property>
             <property name="serverConfig">standalone-capedwarf.xml</property>
