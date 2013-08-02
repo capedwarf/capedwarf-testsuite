@@ -120,6 +120,11 @@
         </dependency>
 
         <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-labs</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>javax.jdo</groupId>
             <artifactId>jdo-api</artifactId>
         </dependency>
@@ -242,13 +247,11 @@
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-capabilities</artifactId>
-
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-channel</artifactId>
-
         </dependency>
 
         <dependency>
@@ -259,55 +262,51 @@
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-common</artifactId>
-
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-datastore</artifactId>
-
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-environment</artifactId>
-
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-files</artifactId>
-
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-images</artifactId>
-
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-log</artifactId>
-
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-mail</artifactId>
-
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-memcache</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>org.jboss.capedwarf.blue</groupId>
+            <artifactId>capedwarf-modules</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-oauth</artifactId>
-
         </dependency>
 
         <dependency>

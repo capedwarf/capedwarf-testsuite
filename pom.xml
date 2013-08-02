@@ -268,6 +268,12 @@
 
             <dependency>
                 <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-modules</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
                 <artifactId>capedwarf-multitenancy</artifactId>
                 <version>${version.org.jboss.capedwarf}</version>
             </dependency>
@@ -431,6 +437,14 @@
             <dependency>
                 <groupId>org.jboss.capedwarf.blue</groupId>
                 <artifactId>capedwarf-memcache</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-modules</artifactId>
                 <version>${version.org.jboss.capedwarf}</version>
                 <type>test-jar</type>
                 <scope>test</scope>

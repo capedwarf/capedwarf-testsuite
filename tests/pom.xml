@@ -176,6 +176,13 @@
 
         <dependency>
             <groupId>org.jboss.capedwarf.blue</groupId>
+            <artifactId>capedwarf-modules</artifactId>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.capedwarf.blue</groupId>
             <artifactId>capedwarf-multitenancy</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
