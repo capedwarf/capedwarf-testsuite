@@ -172,6 +172,15 @@
             <maven-resource group="org.picketlink" artifact="picketlink-consolidated-social"/>
         </module-def>
 
+        <module-def name="org.geotoolkit">
+            <maven-resource group="javax.media" artifact="jai_imageio"/>
+            <maven-resource group="org.geotoolkit" artifact="geotk-utility"/>
+            <maven-resource group="org.geotoolkit" artifact="geotk-metadata"/>
+            <maven-resource group="org.geotoolkit" artifact="geotk-referencing"/>
+            <maven-resource group="org.geotoolkit" artifact="geotk-coverage"/>
+            <maven-resource group="org.geotoolkit" artifact="geotk-coverageio"/>
+        </module-def>
+
     </target>
 
     <target name="clean-target">

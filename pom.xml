@@ -35,6 +35,8 @@
         <version.org.jboss.jandex>1.0.3.Final</version.org.jboss.jandex>
         <version.org.jboss.maven.transformer>1.0.0.Beta4</version.org.jboss.maven.transformer>
         <version.org.jivesoftware.smack>3.1.0</version.org.jivesoftware.smack>
+        <version.javax.jai>1.1.1</version.javax.jai>
+        <version.org.geotoolkit>3.21</version.org.geotoolkit>
 
         <version.org.picketbox>4.0.14.Final</version.org.picketbox>
         <version.org.picketbox.picketbox-commons>1.0.0.final</version.org.picketbox.picketbox-commons>
@@ -116,6 +118,20 @@
             <id>jboss-public-repository-group</id>
             <name>JBoss Public Maven Repository Group</name>
             <url>https://repository.jboss.org/nexus/content/groups/public</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>geotoolkit</id>
+            <name>GeoToolKit</name>
+            <url>http://maven.geotoolkit.org/</url>
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
@@ -638,6 +654,42 @@
             </dependency>
 
             <!-- External Dependencies -->
+
+            <dependency>
+                <groupId>javax.media</groupId>
+                <artifactId>jai_imageio</artifactId>
+                <version>${version.javax.jai}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.geotoolkit</groupId>
+                <artifactId>geotk-utility</artifactId>
+                <version>${version.org.geotoolkit}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.geotoolkit</groupId>
+                <artifactId>geotk-metadata</artifactId>
+                <version>${version.org.geotoolkit}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.geotoolkit</groupId>
+                <artifactId>geotk-referencing</artifactId>
+                <version>${version.org.geotoolkit}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.geotoolkit</groupId>
+                <artifactId>geotk-coverage</artifactId>
+                <version>${version.org.geotoolkit}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.geotoolkit</groupId>
+                <artifactId>geotk-coverageio</artifactId>
+                <version>${version.org.geotoolkit}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.google.appengine.tools</groupId>
