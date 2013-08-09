@@ -33,7 +33,7 @@
         <version.org.jgroups>3.3.0.Final</version.org.jgroups>
         <version.org.infinispan>5.3.0.Final</version.org.infinispan>
         <version.org.jboss.jandex>1.0.3.Final</version.org.jboss.jandex>
-        <version.org.jboss.maven.transformer>1.0.0.Beta4</version.org.jboss.maven.transformer>
+        <version.org.jboss.maven.transformer>1.0.0.Beta5</version.org.jboss.maven.transformer>
         <version.org.jivesoftware.smack>3.1.0</version.org.jivesoftware.smack>
         <version.javax.jai>1.1.1</version.javax.jai>
         <version.org.geotoolkit>3.21</version.org.geotoolkit>
