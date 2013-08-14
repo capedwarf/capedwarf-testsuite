@@ -213,13 +213,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.as</groupId>
-            <artifactId>jboss-as-clustering-infinispan</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.as</groupId>
-            <artifactId>jboss-as-clustering-jgroups</artifactId>
+            <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-clustering-infinispan</artifactId>
         </dependency>
 
         <dependency>
