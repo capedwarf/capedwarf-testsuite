@@ -193,6 +193,19 @@
         </dependency>
 
         <dependency>
+            <groupId>com.google.appengine.tck</groupId>
+            <artifactId>endpoints</artifactId>
+            <scope>test</scope>
+            <type>test-jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-endpoints</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
             <groupId>com.google.appengine.tools</groupId>
             <artifactId>appengine-gcs-client</artifactId>
             <scope>test</scope>

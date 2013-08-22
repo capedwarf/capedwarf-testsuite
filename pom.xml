@@ -653,6 +653,13 @@
                 <type>test-jar</type>
             </dependency>
 
+            <dependency>
+                <groupId>com.google.appengine.tck</groupId>
+                <artifactId>endpoints</artifactId>
+                <version>${version.com.google.appengine.tck}</version>
+                <type>test-jar</type>
+            </dependency>
+
             <!-- External Dependencies -->
 
             <dependency>
@@ -913,6 +920,12 @@
             <dependency>
                 <groupId>com.google.appengine</groupId>
                 <artifactId>appengine-api-labs</artifactId>
+                <version>${version.com.google.appengine}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>appengine-endpoints</artifactId>
                 <version>${version.com.google.appengine}</version>
             </dependency>
 
