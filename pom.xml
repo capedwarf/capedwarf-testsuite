@@ -21,6 +21,8 @@
         <version.org.jboss.capedwarf>1.0.0-SNAPSHOT</version.org.jboss.capedwarf>
         <!-- GAE TCK -->
         <version.com.google.appengine.tck>1.0.0-SNAPSHOT</version.com.google.appengine.tck>
+        <!-- GAE ARQ -->
+        <version.arquillian.gae>1.0.0.Beta3</version.arquillian.gae>
         <!-- External deps -->
         <version.com.google.appengine>1.8.3</version.com.google.appengine>
         <version.com.google.guava>14.0.1</version.com.google.guava>
@@ -50,7 +52,7 @@
         <version.javax.jpa2>1.0.1.Final</version.javax.jpa2>
         <version.org.jboss.spec.javax.servlet.api>1.0.0.Final</version.org.jboss.spec.javax.servlet.api>
         <version.junit>4.11</version.junit>
-        <version.arquillian>1.0.3.Final</version.arquillian>
+        <version.arquillian>1.0.4.Final</version.arquillian>
         <version.shrinkwrap>1.1.2</version.shrinkwrap>
         <version.shrinkwrap.resolver>2.0.0-beta-3</version.shrinkwrap.resolver>
         <version.metainf>1.1</version.metainf>
@@ -658,6 +660,15 @@
                 <artifactId>endpoints</artifactId>
                 <version>${version.com.google.appengine.tck}</version>
                 <type>test-jar</type>
+            </dependency>
+
+            <!-- GAE ARQ -->
+
+            <dependency>
+                <groupId>org.jboss.arquillian.protocol</groupId>
+                <artifactId>arquillian-protocol-modules</artifactId>
+                <version>${version.arquillian.gae}</version>
+                <scope>test</scope>
             </dependency>
 
             <!-- External Dependencies -->
