@@ -97,7 +97,8 @@
         <module>embedded</module>
         <module>tests</module>
         <module>tools</module>
-        <module>tck</module>
+        <module>tck-api</module>
+        <module>tck-core</module>
     </modules>
 
     <repositories>

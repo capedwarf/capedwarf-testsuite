@@ -10,8 +10,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gae-tck</artifactId>
-    <name>CapeDwarf - TCK</name>
+    <artifactId>gae-tck-api</artifactId>
+    <name>CapeDwarf - TCK API</name>
     <packaging>jar</packaging>
 
     <build>
@@ -177,45 +177,7 @@
             <type>test-jar</type>
         </dependency>
 
-        <dependency>
-            <groupId>com.google.appengine.tck</groupId>
-            <artifactId>misc</artifactId>
-            <scope>test</scope>
-            <type>test-jar</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.appengine.tck</groupId>
-            <artifactId>sql</artifactId>
-            <scope>test</scope>
-            <type>test-jar</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.appengine.tck</groupId>
-            <artifactId>gcs-client</artifactId>
-            <scope>test</scope>
-            <type>test-jar</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.appengine.tck</groupId>
-            <artifactId>endpoints</artifactId>
-            <scope>test</scope>
-            <type>test-jar</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-endpoints</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.appengine.tools</groupId>
-            <artifactId>appengine-gcs-client</artifactId>
-            <scope>test</scope>
-        </dependency>
+        <!-- Libs -->
 
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
