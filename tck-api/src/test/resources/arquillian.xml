@@ -24,4 +24,8 @@
         <property name="methods_7">com.google.appengine.tck.datastore.RequiredIndexesTest#testAncestorQueryWithEqualityAndInequalityFiltersAndSortOnASinglePropertyDoesNotRequireConfiguredIndex</property>
     </extension>
 
+    <extension qualifier="webdriver">
+        <property name="browserCapabilities">phantomjs</property>
+    </extension>
+
 </arquillian>

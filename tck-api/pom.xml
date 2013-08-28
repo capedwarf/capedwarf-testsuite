@@ -123,6 +123,13 @@
 
         <dependency>
             <groupId>com.google.appengine.tck</groupId>
+            <artifactId>appengine-tck-channel</artifactId>
+            <scope>test</scope>
+            <type>test-jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.appengine.tck</groupId>
             <artifactId>appengine-tck-datastore</artifactId>
             <scope>test</scope>
             <type>test-jar</type>
@@ -189,6 +196,19 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpmime</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.arquillian.extension</groupId>
+            <artifactId>arquillian-drone-webdriver-depchain</artifactId>
+            <scope>test</scope>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.spec.javax.servlet</groupId>
+            <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>

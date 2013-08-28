@@ -58,6 +58,7 @@
         <version.org.jboss.spec.javax.servlet.api>1.0.0.Final</version.org.jboss.spec.javax.servlet.api>
         <version.junit>4.11</version.junit>
         <version.arquillian>1.1.1.Final</version.arquillian>
+        <version.arquillian.drone>1.2.0.Alpha3</version.arquillian.drone>
         <version.metainf>1.1</version.metainf>
         <!-- DataNucleus -->
         <version.org.datanucleus>3.1.2</version.org.datanucleus>
@@ -92,11 +93,6 @@
     <modules>
         <module>build-as</module>
         <module>integrate-cd</module>
-        <module>embedded</module>
-        <module>tests</module>
-        <module>tools</module>
-        <module>tck-api</module>
-        <module>tck-core</module>
     </modules>
 
     <repositories>
@@ -578,6 +574,13 @@
             <dependency>
                 <groupId>com.google.appengine.tck</groupId>
                 <artifactId>appengine-tck-capability</artifactId>
+                <version>${version.com.google.appengine.tck}</version>
+                <type>test-jar</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.appengine.tck</groupId>
+                <artifactId>appengine-tck-channel</artifactId>
                 <version>${version.com.google.appengine.tck}</version>
                 <type>test-jar</type>
             </dependency>
@@ -1112,7 +1115,57 @@
                 <version>${version.arquillian}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.jboss.arquillian.extension</groupId>
+                <artifactId>arquillian-drone-bom</artifactId>
+                <version>${version.arquillian.drone}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <modules>
+                <module>embedded</module>
+                <module>tests</module>
+                <module>tools</module>
+                <module>tck-api</module>
+                <module>tck-core</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>cd</id>
+            <modules>
+                <module>embedded</module>
+                <module>tests</module>
+                <module>tools</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>tck</id>
+            <modules>
+                <module>tck-api</module>
+                <module>tck-core</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>tck-api</id>
+            <modules>
+                <module>tck-api</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>tck-core</id>
+            <modules>
+                <module>tck-core</module>
+            </modules>
+        </profile>
+    </profiles>
 </project>
