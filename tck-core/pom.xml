@@ -111,6 +111,13 @@
 
         <dependency>
             <groupId>com.google.appengine.tck</groupId>
+            <artifactId>sockets</artifactId>
+            <scope>test</scope>
+            <type>test-jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.appengine.tck</groupId>
             <artifactId>sql</artifactId>
             <scope>test</scope>
             <type>test-jar</type>
