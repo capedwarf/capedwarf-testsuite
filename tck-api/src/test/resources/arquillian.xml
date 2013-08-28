@@ -22,6 +22,7 @@
         <property name="methods_5">com.google.appengine.tck.datastore.QueryFilteringOnCollectionPropertyTest#queryWithNotEqualFilter</property>
         <property name="methods_6">com.google.appengine.tck.datastore.QueryTest#testWithPropertyProjection</property>
         <property name="methods_7">com.google.appengine.tck.datastore.RequiredIndexesTest#testAncestorQueryWithEqualityAndInequalityFiltersAndSortOnASinglePropertyDoesNotRequireConfiguredIndex</property>
+        <property name="methods_8">com.google.appengine.tck.channel.ChannelTest#testSimpleMessage</property>
     </extension>
 
     <extension qualifier="webdriver">
