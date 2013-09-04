@@ -622,6 +622,13 @@
 
             <dependency>
                 <groupId>com.google.appengine.tck</groupId>
+                <artifactId>appengine-tck-search</artifactId>
+                <version>${version.com.google.appengine.tck}</version>
+                <type>test-jar</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.appengine.tck</groupId>
                 <artifactId>appengine-tck-taskqueue</artifactId>
                 <version>${version.com.google.appengine.tck}</version>
                 <type>test-jar</type>
