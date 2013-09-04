@@ -51,6 +51,8 @@
                     </includes>
                     <systemProperties>
                         <jboss.dir>${basedir}/../build-as/target/jboss-as-${version.jboss.as}</jboss.dir>
+                        <!-- Arquillian Drone needs browser -->
+                        <java.awt.headless>true</java.awt.headless>
                     </systemProperties>
                 </configuration>
             </plugin>
