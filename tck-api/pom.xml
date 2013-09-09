@@ -121,12 +121,14 @@
             <type>test-jar</type>
         </dependency>
 
-        <dependency>
+        <!-- TODO - ignore Channel tests for now ... -->
+
+        <!-- dependency>
             <groupId>com.google.appengine.tck</groupId>
             <artifactId>appengine-tck-channel</artifactId>
             <scope>test</scope>
             <type>test-jar</type>
-        </dependency>
+        </dependency -->
 
         <dependency>
             <groupId>com.google.appengine.tck</groupId>
