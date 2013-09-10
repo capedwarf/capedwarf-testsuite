@@ -690,6 +690,13 @@
                 <type>test-jar</type>
             </dependency>
 
+            <dependency>
+                <groupId>com.google.appengine.tck</groupId>
+                <artifactId>modules</artifactId>
+                <version>${version.com.google.appengine.tck}</version>
+                <type>test-jar</type>
+            </dependency>
+
             <!-- GAE ARQ -->
 
             <dependency>
@@ -1158,6 +1165,7 @@
                 <module>tools</module>
                 <module>tck-api</module>
                 <module>tck-core</module>
+                <module>tck-modules</module>
             </modules>
         </profile>
         <profile>
@@ -1173,6 +1181,7 @@
             <modules>
                 <module>tck-api</module>
                 <module>tck-core</module>
+                <module>tck-modules</module>
             </modules>
         </profile>
         <profile>
@@ -1185,6 +1194,12 @@
             <id>tck-core</id>
             <modules>
                 <module>tck-core</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>tck-modules</id>
+            <modules>
+                <module>tck-modules</module>
             </modules>
         </profile>
     </profiles>

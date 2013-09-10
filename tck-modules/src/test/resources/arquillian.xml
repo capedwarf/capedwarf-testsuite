@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquillian xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://jboss.org/schema/arquillian"
+            xsi:schemaLocation="http://jboss.org/schema/arquillian http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+
+    <defaultProtocol type="Modules Servlet Protocol 1.0" />
+
+    <container qualifier="capedwarf" default="true">
+        <configuration>
+            <property name="jbossHome">${jboss.dir}</property>
+            <property name="serverConfig">standalone-capedwarf-modules.xml</property>
+            <property name="javaVmArguments">-Xmx1024m -XX:MaxPermSize=256m -Djboss.mail.host=${jboss.mail.host:localhost}</property>
+            <property name="allowConnectingToRunningServer">true</property>
+        </configuration>
+    </container>
+
+</arquillian>
