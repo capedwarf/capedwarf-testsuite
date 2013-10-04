@@ -167,6 +167,13 @@
 
         <dependency>
             <groupId>com.google.appengine.tck</groupId>
+            <artifactId>appengine-tck-prospectivesearch</artifactId>
+            <scope>test</scope>
+            <type>test-jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.appengine.tck</groupId>
             <artifactId>appengine-tck-search</artifactId>
             <scope>test</scope>
             <type>test-jar</type>

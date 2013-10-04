@@ -23,6 +23,10 @@
         <property name="methods_6">com.google.appengine.tck.datastore.QueryTest#testWithPropertyProjection</property>
         <property name="methods_7">com.google.appengine.tck.datastore.RequiredIndexesTest#testAncestorQueryWithEqualityAndInequalityFiltersAndSortOnASinglePropertyDoesNotRequireConfiguredIndex</property>
         <property name="methods_8">com.google.appengine.tck.search.SearchServiceTest#testSortOptions</property>
+        <property name="methods_9">com.google.appengine.tck.prospectivesearch.MatchTest#testSearchOperatorNOTWithMatch</property>
+        <property name="methods_10">com.google.appengine.tck.prospectivesearch.MatchTest#testNumericOperatorWithMatch</property>
+        <property name="methods_11">com.google.appengine.tck.prospectivesearch.MatchTest#testSearchOperatorORWithMatch</property>
+        <property name="methods_12">com.google.appengine.tck.prospectivesearch.MatchTest#testMatchOnDoubleField</property>
     </extension>
 
     <extension qualifier="webdriver">
