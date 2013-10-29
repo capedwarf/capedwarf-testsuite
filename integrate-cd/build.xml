@@ -92,13 +92,17 @@
             <maven-resource group="org.infinispan" artifact="infinispan-lucene-directory"/>
         </module-def>
 
+       <module-def name="org.hibernate.hql">
+            <maven-resource group="org.hibernate.hql" artifact="hibernate-hql-parser"/>
+        </module-def>
+
         <module-def name="org.jgroups">
             <maven-resource group="org.jgroups" artifact="jgroups"/>
         </module-def>
 
-        <module-def name="org.infinispan">
+        <!-- module-def name="org.infinispan">
             <maven-resource group="org.infinispan" artifact="infinispan-core"/>
-        </module-def>
+        </module-def -->
 
         <module-def name="org.infinispan.query">
             <maven-resource group="org.infinispan" artifact="infinispan-query"/>
@@ -179,19 +183,6 @@
             <maven-resource group="org.geotoolkit" artifact="geotk-referencing"/>
             <maven-resource group="org.geotoolkit" artifact="geotk-coverage"/>
             <maven-resource group="org.geotoolkit" artifact="geotk-coverageio"/>
-        </module-def>
-
-        <!-- Override Web -->
-        <module-def name="org.jboss.as.web">
-            <maven-resource group="org.jboss.as" artifact="jboss-as-web"/>
-            <maven-resource group="org.eclipse.jdt.core.compiler" artifact="ecj"/>
-            <maven-resource group="org.jboss.web" artifact="jbossweb"/>
-        </module-def>
-
-        <!-- Override Javassist -->
-
-        <module-def name="org.javassist">
-            <maven-resource group="org.javassist" artifact="javassist"/>
         </module-def>
 
     </target>
