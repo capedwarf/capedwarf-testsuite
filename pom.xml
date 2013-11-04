@@ -84,8 +84,8 @@
         <!-- Needs to be set explicitely to match with org.jacoco:org.jacoco.ant - see testsuite. -->
         <version.xml.maven.plugin>1.0</version.xml.maven.plugin>
         <!-- Maven plugins -->
-        <version.maven.dependency>2.5.1</version.maven.dependency>
-        <version.maven.surefire>2.12.4</version.maven.surefire>
+        <version.dependency.plugin>2.8</version.dependency.plugin>
+        <version.surefire.plugin>2.12.4</version.surefire.plugin>
         <!-- Compiler configuration -->
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
@@ -794,6 +794,12 @@
                 <groupId>org.jboss.maven.plugins</groupId>
                 <artifactId>maven-transformer-plugin</artifactId>
                 <version>${version.org.jboss.maven.transformer}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>javassist</groupId>
+                        <artifactId>javassist</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
