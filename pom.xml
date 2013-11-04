@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <version.jboss.wildfly>8.0.0.Beta1</version.jboss.wildfly>
+        <version.jboss.wildfly>8.0.0.Beta2-SNAPSHOT</version.jboss.wildfly>
         <version.org.jboss.xnio>3.1.0.CR7</version.org.jboss.xnio>
         <version.org.jboss.capedwarf.shared>1.0.0-SNAPSHOT</version.org.jboss.capedwarf.shared>
         <version.org.jboss.as.capedwarf>1.0.0-SNAPSHOT</version.org.jboss.as.capedwarf>
@@ -35,7 +35,7 @@
         <version.org.hibernate.search>4.5.0.Alpha1</version.org.hibernate.search>
         <version.org.hibernate.hql>1.0.0.Alpha5</version.org.hibernate.hql>
         <version.org.jgroups>3.4.0.Final</version.org.jgroups>
-        <version.org.infinispan>6.0.0.CR1</version.org.infinispan>
+        <version.org.infinispan>6.0.0-SNAPSHOT</version.org.infinispan>
         <version.org.jboss.jandex>1.1.0.Final</version.org.jboss.jandex>
         <version.org.jboss.maven.transformer>1.0.0.Beta5</version.org.jboss.maven.transformer>
         <version.org.jivesoftware.smack>3.1.0</version.org.jivesoftware.smack>
@@ -906,6 +906,12 @@
             <dependency>
                 <groupId>org.infinispan</groupId>
                 <artifactId>infinispan-core</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-commons</artifactId>
                 <version>${version.org.infinispan}</version>
             </dependency>
 
