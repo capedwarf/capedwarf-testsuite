@@ -20,7 +20,7 @@
   ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
-<module xmlns="urn:jboss:module:1.0" name="org.infinispan.query">
+<module xmlns="urn:jboss:module:1.1" name="org.infinispan.commons">
     <resources>
         <!-- Insert resources here -->
     </resources>
@@ -29,12 +29,9 @@
         <module name="javax.api"/>
         <module name="javax.transaction.api"/>
         <module name="org.jboss.logging"/>
-        <module name="org.infinispan"/>
-        <module name="org.infinispan.commons"/>
-        <module name="org.slf4j"/>
-        <module name="org.hibernate"/>
-        <module name="org.hibernate.search"/>
-        <module name="org.hibernate.hql"/>
-        <module name="org.apache.lucene"/>
+        <module name="org.jboss.marshalling"/>
+        <module name="org.jboss.marshalling.river"/>
+        <module name="sun.jdk"/>
+        <module name="org.infinispan.query" services="import" optional="true"/>
     </dependencies>
 </module>
