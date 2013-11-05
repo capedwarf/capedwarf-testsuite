@@ -96,9 +96,9 @@
             <maven-resource group="org.hibernate.hql" artifact="hibernate-hql-parser"/>
         </module-def>
 
-        <module-def name="org.jgroups">
+        <!-- module-def name="org.jgroups">
             <maven-resource group="org.jgroups" artifact="jgroups"/>
-        </module-def>
+        </module-def -->
 
         <module-def name="org.infinispan">
             <maven-resource group="org.infinispan" artifact="infinispan-core"/>
