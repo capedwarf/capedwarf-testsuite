@@ -1210,6 +1210,12 @@
             </modules>
         </profile>
         <profile>
+            <id>tools</id>
+            <modules>
+                <module>tools</module>
+            </modules>
+        </profile>
+        <profile>
             <id>tck</id>
             <modules>
                 <module>tck-api</module>
