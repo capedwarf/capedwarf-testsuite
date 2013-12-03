@@ -172,12 +172,12 @@
             <type>test-jar</type>
         </dependency>
 
-        <dependency>
+        <!-- dependency>
             <groupId>com.google.appengine.tck</groupId>
             <artifactId>appengine-tck-oauth</artifactId>
             <scope>test</scope>
             <type>test-jar</type>
-        </dependency>
+        </dependency -->
 
         <dependency>
             <groupId>com.google.appengine.tck</groupId>
