@@ -176,12 +176,6 @@
             </dependency>
 
             <dependency>
-                <groupId>org.jboss.capedwarf</groupId>
-                <artifactId>wildfly-capedwarf-workaround</artifactId>
-                <version>${version.org.jboss.as.capedwarf}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>org.jboss.capedwarf.blue</groupId>
                 <artifactId>capedwarf-appidentity</artifactId>
                 <version>${version.org.jboss.capedwarf}</version>
