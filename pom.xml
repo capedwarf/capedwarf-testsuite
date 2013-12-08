@@ -35,7 +35,7 @@
         <version.org.hibernate.search>4.5.0.Alpha1</version.org.hibernate.search>
         <version.org.hibernate.hql>1.0.0.Alpha5</version.org.hibernate.hql>
         <version.org.jgroups>3.4.0.Final</version.org.jgroups>
-        <version.org.infinispan>6.0.0.Final</version.org.infinispan>
+        <version.org.infinispan>6.0.1-SNAPSHOT</version.org.infinispan>
         <version.org.jboss.jandex>1.1.0.Final</version.org.jboss.jandex>
         <version.org.jboss.maven.transformer>1.0.0.Beta5</version.org.jboss.maven.transformer>
         <version.org.jivesoftware.smack>3.1.0</version.org.jivesoftware.smack>
