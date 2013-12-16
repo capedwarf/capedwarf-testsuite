@@ -53,16 +53,6 @@
             <maven-resource group="javax.jdo" artifact="jdo-api"/>
         </module-def>
 
-        <module-def name="org.apache.avro">
-            <maven-resource group="org.apache.avro" artifact="avro"/>
-        </module-def>
-
-       <module-def name="org.apache.lucene">
-            <maven-resource group="org.apache.lucene" artifact="lucene-core"/>
-            <maven-resource group="org.apache.lucene" artifact="lucene-analyzers"/>
-            <maven-resource group="org.apache.lucene" artifact="lucene-memory"/>
-        </module-def>
-
         <module-def name="org.bouncycastle.bcmail">
             <maven-resource group="org.bouncycastle" artifact="bcmail-jdk15on"/>
         </module-def>
@@ -86,38 +76,8 @@
             <maven-resource group="com.google.appengine.orm" artifact="datanucleus-appengine" />
         </module-def>
 
-       <module-def name="org.hibernate.search">
-            <maven-resource group="org.hibernate" artifact="hibernate-search-engine"/>
-            <maven-resource group="org.hibernate" artifact="hibernate-search-infinispan"/>
-            <maven-resource group="org.infinispan" artifact="infinispan-lucene-directory"/>
-        </module-def>
-
-       <module-def name="org.hibernate.hql">
-            <maven-resource group="org.hibernate.hql" artifact="hibernate-hql-parser"/>
-        </module-def>
-
-        <!-- module-def name="org.jgroups">
-            <maven-resource group="org.jgroups" artifact="jgroups"/>
-        </module-def -->
-
-        <module-def name="org.infinispan">
-            <maven-resource group="org.infinispan" artifact="infinispan-core"/>
-        </module-def>
-
-        <module-def name="org.infinispan.commons">
-            <maven-resource group="org.infinispan" artifact="infinispan-commons"/>
-        </module-def>
-
-        <module-def name="org.infinispan.query">
-            <maven-resource group="org.infinispan" artifact="infinispan-query"/>
-        </module-def>
-
         <module-def name="org.jboss.as.capedwarf">
             <maven-resource group="org.jboss.capedwarf" artifact="wildfly-capedwarf"/>
-        </module-def>
-
-        <module-def name="org.jboss.as.clustering.infinispan">
-            <maven-resource group="org.wildfly" artifact="wildfly-clustering-infinispan"/>
         </module-def>
 
         <module-def name="org.jboss.capedwarf.shared">
@@ -138,6 +98,7 @@
             <maven-resource group="org.jboss.capedwarf.blue" artifact="capedwarf-endpoints"/>
             <maven-resource group="org.jboss.capedwarf.blue" artifact="capedwarf-environment"/>
             <maven-resource group="org.jboss.capedwarf.blue" artifact="capedwarf-files"/>
+            <maven-resource group="org.jboss.capedwarf.blue" artifact="capedwarf-gql4j"/>
             <maven-resource group="org.jboss.capedwarf.blue" artifact="capedwarf-images"/>
             <maven-resource group="org.jboss.capedwarf.blue" artifact="capedwarf-log"/>
             <maven-resource group="org.jboss.capedwarf.blue" artifact="capedwarf-mail"/>
@@ -188,6 +149,51 @@
             <maven-resource group="org.geotoolkit" artifact="geotk-coverage"/>
             <maven-resource group="org.geotoolkit" artifact="geotk-coverageio"/>
         </module-def>
+
+        <module-def name="org.antlr" slot="3">
+            <maven-resource group="org.antlr" artifact="antlr-runtime"/>
+        </module-def>
+
+        <!-- module-def name="org.apache.avro">
+            <maven-resource group="org.apache.avro" artifact="avro"/>
+        </module-def>
+
+        <module-def name="org.apache.lucene">
+            <maven-resource group="org.apache.lucene" artifact="lucene-core"/>
+            <maven-resource group="org.apache.lucene" artifact="lucene-analyzers"/>
+            <maven-resource group="org.apache.lucene" artifact="lucene-memory"/>
+        </module-def>
+
+
+        <module-def name="org.jboss.as.clustering.infinispan">
+            <maven-resource group="org.wildfly" artifact="wildfly-clustering-infinispan"/>
+        </module-def>
+
+        <module-def name="org.hibernate.search">
+            <maven-resource group="org.hibernate" artifact="hibernate-search-engine"/>
+            <maven-resource group="org.hibernate" artifact="hibernate-search-infinispan"/>
+            <maven-resource group="org.infinispan" artifact="infinispan-lucene-directory"/>
+        </module-def>
+
+        <module-def name="org.hibernate.hql">
+            <maven-resource group="org.hibernate.hql" artifact="hibernate-hql-parser"/>
+        </module-def>
+
+        <module-def name="org.jgroups">
+            <maven-resource group="org.jgroups" artifact="jgroups"/>
+        </module-def>
+
+        <module-def name="org.infinispan">
+            <maven-resource group="org.infinispan" artifact="infinispan-core"/>
+        </module-def>
+
+        <module-def name="org.infinispan.commons">
+            <maven-resource group="org.infinispan" artifact="infinispan-commons"/>
+        </module-def>
+
+        <module-def name="org.infinispan.query">
+            <maven-resource group="org.infinispan" artifact="infinispan-query"/>
+        </module-def -->
 
     </target>
 

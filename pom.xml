@@ -42,6 +42,7 @@
         <version.javax.jai>1.1.1</version.javax.jai>
         <version.org.geotoolkit>3.21</version.org.geotoolkit>
         <version.javassist>3.18.1-GA</version.javassist>
+        <version.antlr>3.1</version.antlr>
 
         <version.org.picketbox>4.0.14.Final</version.org.picketbox>
         <version.org.picketbox.picketbox-commons>1.0.0.final</version.org.picketbox.picketbox-commons>
@@ -261,6 +262,12 @@
 
             <dependency>
                 <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-gql4j</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
                 <artifactId>capedwarf-images</artifactId>
                 <version>${version.org.jboss.capedwarf}</version>
             </dependency>
@@ -422,6 +429,14 @@
             <dependency>
                 <groupId>org.jboss.capedwarf.blue</groupId>
                 <artifactId>capedwarf-files</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-gql4j</artifactId>
                 <version>${version.org.jboss.capedwarf}</version>
                 <type>test-jar</type>
                 <scope>test</scope>
@@ -720,6 +735,12 @@
             </dependency>
 
             <!-- External Dependencies -->
+
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr-runtime</artifactId>
+                <version>${version.antlr}</version>
+            </dependency>
 
             <dependency>
                 <groupId>javax.media</groupId>
