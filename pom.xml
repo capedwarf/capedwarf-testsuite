@@ -90,11 +90,6 @@
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
 
-    <modules>
-        <module>build-as</module>
-        <module>integrate-cd</module>
-    </modules>
-
     <repositories>
         <repository>
             <id>datanucleus</id>
