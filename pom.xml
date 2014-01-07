@@ -420,6 +420,14 @@
 
             <dependency>
                 <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-cluster-tests</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
                 <artifactId>capedwarf-datastore</artifactId>
                 <version>${version.org.jboss.capedwarf}</version>
                 <type>test-jar</type>
@@ -1200,9 +1208,12 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
+                <module>build-as</module>
+                <module>integrate-cd</module>
                 <module>embedded</module>
                 <module>tests</module>
                 <module>tools</module>
+                <module>cluster-tests</module>
                 <module>tck-api</module>
                 <module>tck-core</module>
                 <module>tck-modules</module>
@@ -1211,20 +1222,35 @@
         <profile>
             <id>cd</id>
             <modules>
+                <module>build-as</module>
+                <module>integrate-cd</module>
                 <module>embedded</module>
                 <module>tests</module>
                 <module>tools</module>
+                <module>cluster-tests</module>
             </modules>
         </profile>
         <profile>
             <id>tools</id>
             <modules>
+                <module>build-as</module>
+                <module>integrate-cd</module>
                 <module>tools</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>cluster</id>
+            <modules>
+                <module>build-as</module>
+                <module>integrate-cd</module>
+                <module>cluster-tests</module>
             </modules>
         </profile>
         <profile>
             <id>tck</id>
             <modules>
+                <module>build-as</module>
+                <module>integrate-cd</module>
                 <module>tck-api</module>
                 <module>tck-core</module>
                 <module>tck-modules</module>
@@ -1233,18 +1259,24 @@
         <profile>
             <id>tck-api</id>
             <modules>
+                <module>build-as</module>
+                <module>integrate-cd</module>
                 <module>tck-api</module>
             </modules>
         </profile>
         <profile>
             <id>tck-core</id>
             <modules>
+                <module>build-as</module>
+                <module>integrate-cd</module>
                 <module>tck-core</module>
             </modules>
         </profile>
         <profile>
             <id>tck-modules</id>
             <modules>
+                <module>build-as</module>
+                <module>integrate-cd</module>
                 <module>tck-modules</module>
             </modules>
         </profile>
