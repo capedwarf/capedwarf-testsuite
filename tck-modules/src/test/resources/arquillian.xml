@@ -3,7 +3,12 @@
             xmlns="http://jboss.org/schema/arquillian"
             xsi:schemaLocation="http://jboss.org/schema/arquillian http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
 
-    <defaultProtocol type="Modules Servlet Protocol 1.0" />
+    <defaultProtocol type="Modules Servlet Protocol 1.0">
+        <!-- property name="pullInMilliSeconds">0</property -->
+        <!-- property name="failOnMissingModule">true</property -->
+        <!-- Configure module hosts, ports, etc -->
+        <property name="properties">m2.port=8180</property>
+    </defaultProtocol>
 
     <container qualifier="capedwarf" default="true">
         <configuration>
