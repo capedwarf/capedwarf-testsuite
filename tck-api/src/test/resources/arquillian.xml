@@ -22,7 +22,8 @@
         <property name="methods_5">com.google.appengine.tck.datastore.QueryFilteringOnCollectionPropertyTest#queryWithNotEqualFilter</property>
         <property name="methods_6">com.google.appengine.tck.datastore.QueryTest#testWithPropertyProjection</property>
         <property name="methods_7">com.google.appengine.tck.datastore.RequiredIndexesTest#testAncestorQueryWithEqualityAndInequalityFiltersAndSortOnASinglePropertyDoesNotRequireConfiguredIndex</property>
-        <property name="methods_8">com.google.appengine.tck.search.SearchServiceTest#testSortOptions</property>
+        <property name="methods_8">com.google.appengine.tck.mail.MailServiceTest#testBounceNotification</property>
+        <property name="methods_9">com.google.appengine.tck.search.SearchServiceTest#testSortOptions</property>
         <!-- property name="methods_9">com.google.appengine.tck.oauth.ClientSideWebAppFlowTest#testUnauthenticatedRequest</property>
         <property name="methods_10">com.google.appengine.tck.oauth.ClientSideWebAppFlowTest#testGetEmailValidScope</property>
         <property name="methods_11">com.google.appengine.tck.oauth.ClientSideWebAppFlowTest#testNoScopeThrowsInvalidOAuthTokenException</property>
