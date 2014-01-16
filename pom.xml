@@ -25,7 +25,7 @@
         <!-- GAE ARQ -->
         <version.arquillian.gae>1.0.0.Beta7</version.arquillian.gae>
         <!-- External deps -->
-        <version.com.google.appengine>1.8.8</version.com.google.appengine>
+        <version.com.google.appengine>1.8.9</version.com.google.appengine>
         <version.com.google.guava>15.0</version.com.google.guava>
         <version.org.apache.ant>1.8.2</version.org.apache.ant>
         <version.org.apache.httpcomponents>4.2.1</version.org.apache.httpcomponents>
