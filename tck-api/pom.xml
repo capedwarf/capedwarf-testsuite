@@ -128,14 +128,12 @@
             <type>test-jar</type>
         </dependency>
 
-        <!-- TODO - ignore Channel tests for now ... -->
-
-        <!-- dependency>
+        <dependency>
             <groupId>com.google.appengine.tck</groupId>
             <artifactId>appengine-tck-channel</artifactId>
             <scope>test</scope>
             <type>test-jar</type>
-        </dependency -->
+        </dependency>
 
         <dependency>
             <groupId>com.google.appengine.tck</groupId>
@@ -172,12 +170,12 @@
             <type>test-jar</type>
         </dependency>
 
-        <!-- dependency>
+        <dependency>
             <groupId>com.google.appengine.tck</groupId>
             <artifactId>appengine-tck-oauth</artifactId>
             <scope>test</scope>
             <type>test-jar</type>
-        </dependency -->
+        </dependency>
 
         <dependency>
             <groupId>com.google.appengine.tck</groupId>
