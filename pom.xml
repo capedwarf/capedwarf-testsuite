@@ -57,7 +57,7 @@
         <version.org.jboss.spec.javax.servlet.api>1.0.0.Final</version.org.jboss.spec.javax.servlet.api>
         <version.junit>4.11</version.junit>
         <version.arquillian>1.1.1.Final</version.arquillian>
-        <version.arquillian.drone>1.2.0.Final</version.arquillian.drone>
+        <version.org.jboss.arquillian.graphene2>2.0.0.Final</version.org.jboss.arquillian.graphene2>
         <version.metainf>1.1</version.metainf>
         <!-- DataNucleus -->
         <version.org.datanucleus>3.1.2</version.org.datanucleus>
@@ -1186,11 +1186,11 @@
             </dependency>
 
             <dependency>
-                <groupId>org.jboss.arquillian.extension</groupId>
-                <artifactId>arquillian-drone-bom</artifactId>
-                <version>${version.arquillian.drone}</version>
+                <groupId>org.jboss.arquillian.graphene</groupId>
+                <artifactId>graphene-webdriver</artifactId>
+                <version>${version.org.jboss.arquillian.graphene2}</version>
                 <type>pom</type>
-                <scope>import</scope>
+                <scope>test</scope>
             </dependency>
 
         </dependencies>
