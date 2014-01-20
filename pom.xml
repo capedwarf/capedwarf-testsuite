@@ -43,6 +43,7 @@
         <version.org.geotoolkit>3.21</version.org.geotoolkit>
         <version.javassist>3.18.1-GA</version.javassist>
         <version.antlr>3.1</version.antlr>
+        <version.jboss.wildfly.mailra>1.0.0.Alpha1</version.jboss.wildfly.mailra>
 
         <version.org.picketbox>4.0.20.Beta2</version.org.picketbox>
         <version.org.picketbox.picketbox-commons>1.0.0.final</version.org.picketbox.picketbox-commons>
@@ -1015,6 +1016,18 @@
                 <groupId>org.wildfly</groupId>
                 <artifactId>wildfly-clustering-infinispan</artifactId>
                 <version>${version.jboss.wildfly}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.wildfly</groupId>
+                <artifactId>mail-ra-api</artifactId>
+                <version>${version.jboss.wildfly.mailra}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.wildfly</groupId>
+                <artifactId>mail-ra-impl</artifactId>
+                <version>${version.jboss.wildfly.mailra}</version>
             </dependency>
 
             <!-- GAE -->
