@@ -42,7 +42,7 @@
         <!-- needed for annotations to work (@SerializeWith, @Transformable, @Indexed, ...) -->
         <module name="org.infinispan"/>
         <module name="org.infinispan.query"/>
-        <module name="org.hibernate.search"/>
+        <module name="org.hibernate.search.engine"/>
         <!-- used when creating proxies -->
         <module name="org.javassist"/>
         <module name="javax.servlet.api"/>

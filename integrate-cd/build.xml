@@ -174,7 +174,7 @@
             <maven-resource group="org.wildfly" artifact="wildfly-clustering-infinispan"/>
         </module-def>
 
-        <module-def name="org.hibernate.search">
+        <module-def name="org.hibernate.search.engine">
             <maven-resource group="org.hibernate" artifact="hibernate-search-engine"/>
             <maven-resource group="org.hibernate" artifact="hibernate-search-infinispan"/>
             <maven-resource group="org.infinispan" artifact="infinispan-lucene-directory"/>
