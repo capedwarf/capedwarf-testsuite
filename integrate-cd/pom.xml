@@ -16,7 +16,9 @@
 
     <properties>
         <jboss.dir>${basedir}/../build-as/target/wildfly-${version.jboss.wildfly}</jboss.dir>
+        <ant.target>all</ant.target>
     </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -56,29 +58,6 @@
                         <version>${version.rhino.js}</version>
                     </dependency>
                 </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>${version.org.codehaus.exec}</version>
-                <executions>
-                    <execution>
-                        <id>bytecode-transform</id>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                        <phase>verify</phase>
-                        <configuration>
-                            <includeProjectDependencies>true</includeProjectDependencies>
-                            <includePluginDependencies>false</includePluginDependencies>
-                            <mainClass>org.jboss.capedwarf.bytecode.CapedwarfTransformerMojo</mainClass>
-                            <arguments>
-                                <argument>${jboss.dir}/modules/com/google/appengine/main/appengine-api-1.0-sdk-${version.com.google.appengine}.jar</argument>
-                                <argument>${jboss.dir}/modules/com/google/appengine/main/appengine-api-labs-${version.com.google.appengine}.jar</argument>
-                            </arguments>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
@@ -463,9 +442,63 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties>
-                <ant.target>all</ant.target>
-            </properties>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${version.org.codehaus.exec}</version>
+                        <executions>
+                            <execution>
+                                <id>bytecode-transform</id>
+                                <goals>
+                                    <goal>java</goal>
+                                </goals>
+                                <phase>verify</phase>
+                                <configuration>
+                                    <includeProjectDependencies>true</includeProjectDependencies>
+                                    <includePluginDependencies>false</includePluginDependencies>
+                                    <mainClass>org.jboss.capedwarf.bytecode.CapedwarfTransformerMojo</mainClass>
+                                    <arguments>
+                                        <argument>${jboss.dir}/modules/com/google/appengine/main/appengine-api-1.0-sdk-${version.com.google.appengine}.jar</argument>
+                                        <argument>${jboss.dir}/modules/com/google/appengine/main/appengine-api-labs-${version.com.google.appengine}.jar</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>release</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <version>${version.assembly.maven.plugin}</version>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/main/assembly/descriptor.xml</descriptor>
+                            </descriptors>
+                            <finalName>CapeDwarf_WildFly_${version.capedwarf}</finalName>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>make-assembly</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>single</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
     </profiles>
 </project>

@@ -15,6 +15,8 @@
     <packaging>pom</packaging>
 
     <properties>
+        <version.capedwarf>2.0.0.CR1</version.capedwarf>
+        <!-- Deps -->
         <version.jboss.wildfly>8.0.0.Final</version.jboss.wildfly>
         <version.org.jboss.xnio>3.2.0.Final</version.org.jboss.xnio>
         <version.org.jboss.capedwarf.shared>1.0.0-SNAPSHOT</version.org.jboss.capedwarf.shared>
@@ -82,6 +84,8 @@
         <version.objectify>4.0rc2</version.objectify>
         <!-- Testing REST -->
         <version.org.jboss.resteasy>3.0.6.Final</version.org.jboss.resteasy>
+        <!-- Assembly -->
+        <version.assembly.maven.plugin>2.4</version.assembly.maven.plugin>
         <!-- Needs to be set explicitely to match with org.jacoco:org.jacoco.ant - see testsuite. -->
         <version.xml.maven.plugin>1.0</version.xml.maven.plugin>
         <!-- Maven plugins -->
@@ -1293,6 +1297,13 @@
                 <module>build-as</module>
                 <module>integrate-cd</module>
                 <module>tck-modules</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>release</id>
+            <modules>
+                <module>build-as</module>
+                <module>integrate-cd</module>
             </modules>
         </profile>
     </profiles>

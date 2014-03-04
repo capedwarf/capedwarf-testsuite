@@ -1,0 +1,13 @@
+<assembly>
+    <id>release</id>
+    <baseDirectory>CapeDwarf_WildFly_${version.capedwarf}</baseDirectory>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <fileSets>
+        <fileSet>
+            <directory>${jboss.dir}</directory>
+            <outputDirectory>/</outputDirectory>
+        </fileSet>
+    </fileSets>
+</assembly>
