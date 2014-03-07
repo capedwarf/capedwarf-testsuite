@@ -735,7 +735,7 @@
 
             <dependency>
                 <groupId>com.google.appengine.tck</groupId>
-                <artifactId>modules</artifactId>
+                <artifactId>appengine-tck-modules</artifactId>
                 <version>${version.com.google.appengine.tck}</version>
                 <type>test-jar</type>
             </dependency>
