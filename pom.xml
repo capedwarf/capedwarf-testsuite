@@ -1320,5 +1320,12 @@
                 <module>integrate-cd</module>
             </modules>
         </profile>
+        <profile>
+            <id>dist</id>
+            <modules>
+                <module>build-as</module>
+                <module>integrate-cd</module>
+            </modules>
+        </profile>
     </profiles>
 </project>
