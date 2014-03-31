@@ -59,8 +59,8 @@
         <version.javax.jpa2>1.0.1.Final</version.javax.jpa2>
         <version.org.jboss.spec.javax.servlet.api>1.0.0.Final</version.org.jboss.spec.javax.servlet.api>
         <version.junit>4.11</version.junit>
-        <version.arquillian>1.1.1.Final</version.arquillian>
-        <version.org.jboss.arquillian.graphene2>2.0.0.Final</version.org.jboss.arquillian.graphene2>
+        <version.arquillian>1.1.4.Final</version.arquillian>
+        <version.org.jboss.arquillian.graphene2>2.0.2.Final</version.org.jboss.arquillian.graphene2>
         <version.metainf>1.1</version.metainf>
         <!-- DataNucleus -->
         <version.org.datanucleus>3.1.2</version.org.datanucleus>
