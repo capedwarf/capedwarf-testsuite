@@ -46,6 +46,7 @@
         <version.javassist>3.18.1-GA</version.javassist>
         <version.antlr>3.1</version.antlr>
         <version.jboss.wildfly.mailra>1.0.0.Alpha2</version.jboss.wildfly.mailra>
+        <version.org.quartz>2.2.1</version.org.quartz>
 
         <version.org.picketbox>4.0.20.Final</version.org.picketbox>
         <version.org.picketbox.picketbox-commons>1.0.0.final</version.org.picketbox.picketbox-commons>
@@ -240,6 +241,12 @@
             <dependency>
                 <groupId>org.jboss.capedwarf.blue</groupId>
                 <artifactId>capedwarf-common</artifactId>
+                <version>${version.org.jboss.capedwarf}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.blue</groupId>
+                <artifactId>capedwarf-cron</artifactId>
                 <version>${version.org.jboss.capedwarf}</version>
             </dependency>
 
@@ -1041,11 +1048,23 @@
                 <version>${version.jboss.wildfly.mailra}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz</artifactId>
+                <version>${version.org.quartz}</version>
+            </dependency>
+
             <!-- GAE -->
 
             <dependency>
                 <groupId>com.google.appengine</groupId>
                 <artifactId>appengine-api-1.0-sdk</artifactId>
+                <version>${version.com.google.appengine}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>appengine-tools-sdk</artifactId>
                 <version>${version.com.google.appengine}</version>
             </dependency>
 
