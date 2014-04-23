@@ -5,12 +5,12 @@
     <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
-        <version>10</version>
+        <version>14</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jboss.capedwarf.testsuite</groupId>
     <artifactId>capedwarf-testsuite</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
     <name>CapeDwarf - Integration Testsuite</name>
     <packaging>pom</packaging>
 
@@ -19,9 +19,9 @@
         <!-- Deps -->
         <version.jboss.wildfly>8.1.0.CR1</version.jboss.wildfly>
         <version.org.jboss.xnio>3.2.2.Final</version.org.jboss.xnio>
-        <version.org.jboss.capedwarf.shared>1.0.0-SNAPSHOT</version.org.jboss.capedwarf.shared>
-        <version.org.jboss.as.capedwarf>1.0.0-SNAPSHOT</version.org.jboss.as.capedwarf>
-        <version.org.jboss.capedwarf>1.0.0-SNAPSHOT</version.org.jboss.capedwarf>
+        <version.org.jboss.capedwarf.shared>2.0.0-SNAPSHOT</version.org.jboss.capedwarf.shared>
+        <version.org.jboss.as.capedwarf>2.0.0-SNAPSHOT</version.org.jboss.as.capedwarf>
+        <version.org.jboss.capedwarf>2.0.0-SNAPSHOT</version.org.jboss.capedwarf>
         <!-- GAE TCK -->
         <version.com.google.appengine.tck>1.0.0-SNAPSHOT</version.com.google.appengine.tck>
         <!-- GAE ARQ -->
@@ -30,9 +30,9 @@
         <version.com.google.appengine>1.9.3</version.com.google.appengine>
         <version.com.google.guava>15.0</version.com.google.guava>
         <version.org.apache.ant>1.8.2</version.org.apache.ant>
-        <version.org.apache.httpcomponents>4.2.1</version.org.apache.httpcomponents>
+        <version.org.apache.httpcomponents>4.2.5</version.org.apache.httpcomponents>
         <version.org.apache.lucene>3.6.2</version.org.apache.lucene>
-        <version.org.bouncycastle>1.47</version.org.bouncycastle>
+        <version.org.bouncycastle>1.50</version.org.bouncycastle>
         <version.org.codehaus.exec>1.2.1</version.org.codehaus.exec>
         <version.org.hibernate.search>4.5.1.Final</version.org.hibernate.search>
         <version.org.hibernate.hql>1.0.0.Alpha6</version.org.hibernate.hql>
@@ -57,7 +57,7 @@
         <version.com.google.code.guice>2.0</version.com.google.code.guice>
 
         <version.rhino.js>1.7R2</version.rhino.js>
-        <version.javax.jpa2>1.0.1.Final</version.javax.jpa2>
+        <version.javax.jpa2>1.0.0.Final</version.javax.jpa2>
         <version.org.jboss.spec.javax.servlet.api>1.0.0.Final</version.org.jboss.spec.javax.servlet.api>
         <version.junit>4.11</version.junit>
         <version.arquillian>1.1.4.Final</version.arquillian>
@@ -1093,7 +1093,7 @@
 
             <dependency>
                 <groupId>org.hibernate.javax.persistence</groupId>
-                <artifactId>hibernate-jpa-2.0-api</artifactId>
+                <artifactId>hibernate-jpa-2.1-api</artifactId>
                 <version>${version.javax.jpa2}</version>
             </dependency>
 
