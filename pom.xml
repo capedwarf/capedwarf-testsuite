@@ -70,7 +70,7 @@
         <version.org.datanucleus.jdo>3.0.1</version.org.datanucleus.jdo>
         <version.org.datanucleus.jta>1.1.1</version.org.datanucleus.jta>
         <!-- TEMP -->
-        <version.jsf.impl>2.2.6-jbossorg-2</version.jsf.impl>
+        <version.jsf.impl>2.2.6-jbossorg-4</version.jsf.impl>
 
         <!-- Testing - MapReduce -->
         <version.com.google.gae.mapreduce>0.5</version.com.google.gae.mapreduce>
