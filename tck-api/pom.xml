@@ -220,6 +220,11 @@
         <!-- Libs -->
 
         <dependency>
+            <groupId>com.google.appengine.tck</groupId>
+            <artifactId>appengine-tck-login</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <scope>test</scope>

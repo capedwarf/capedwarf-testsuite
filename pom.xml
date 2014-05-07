@@ -30,7 +30,7 @@
         <version.com.google.appengine>1.9.4</version.com.google.appengine>
         <version.com.google.guava>15.0</version.com.google.guava>
         <version.org.apache.ant>1.8.2</version.org.apache.ant>
-        <version.org.apache.httpcomponents>4.2.5</version.org.apache.httpcomponents>
+        <version.org.apache.httpcomponents>4.3.1</version.org.apache.httpcomponents>
         <version.org.apache.lucene>3.6.2</version.org.apache.lucene>
         <version.org.bouncycastle>1.50</version.org.bouncycastle>
         <version.org.codehaus.exec>1.2.1</version.org.codehaus.exec>
@@ -53,7 +53,7 @@
         <version.org.picketlink>2.1.10.Final</version.org.picketlink>
         <version.org.picketlink.social>2.5.2.Final</version.org.picketlink.social>
         <version.org.openid4java>0.9.6</version.org.openid4java>
-        <version.net.sourceforge.nekohtml>1.9.10</version.net.sourceforge.nekohtml>
+        <version.net.sourceforge.nekohtml>1.9.20</version.net.sourceforge.nekohtml>
         <version.com.google.code.guice>2.0</version.com.google.code.guice>
 
         <version.rhino.js>1.7R2</version.rhino.js>
@@ -748,6 +748,12 @@
                 <artifactId>appengine-tck-modules</artifactId>
                 <version>${version.com.google.appengine.tck}</version>
                 <type>test-jar</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.appengine.tck</groupId>
+                <artifactId>appengine-tck-login</artifactId>
+                <version>${version.com.google.appengine.tck}</version>
             </dependency>
 
             <!-- GAE ARQ -->
