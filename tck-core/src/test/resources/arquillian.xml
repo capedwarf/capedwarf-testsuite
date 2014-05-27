@@ -16,7 +16,6 @@
 
     <extension qualifier="override">
         <property name="methods_1">com.google.appengine.tck.misc.env.EnvVariablesTest#testEnvironmentVariables</property>
-        <property name="methods_2">com.google.appengine.tck.misc.servlet.LoaderTest#testPost</property>
     </extension>
 
     <extension qualifier="webdriver">
