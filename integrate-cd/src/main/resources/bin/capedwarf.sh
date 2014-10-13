@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #shortcut to boot JBossAS with CapeDwarf configuration
 #if you need to set other boot options, please use standalone.sh
 
