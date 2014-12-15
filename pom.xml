@@ -28,6 +28,7 @@
         <version.arquillian.gae>1.0.0.Beta10</version.arquillian.gae>
         <!-- External deps -->
         <version.com.google.appengine>1.9.17a</version.com.google.appengine>
+        <version.com.google.appengine.managed>1.9.17</version.com.google.appengine.managed>
         <version.com.google.guava>15.0</version.com.google.guava>
         <version.org.apache.ant>1.8.2</version.org.apache.ant>
         <version.org.apache.httpcomponents>4.3.1</version.org.apache.httpcomponents>
@@ -176,6 +177,24 @@
             </dependency>
 
             <!-- CapeDwarf -->
+
+            <dependency>
+                <groupId>org.jboss.capedwarf.shared</groupId>
+                <artifactId>capedwarf-common</artifactId>
+                <version>${version.org.jboss.capedwarf.shared}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>appengine-managed-runtime</artifactId>
+                <version>${version.com.google.appengine.managed}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>appengine-jetty-managed-runtime</artifactId>
+                <version>${version.com.google.appengine.managed}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.jboss.capedwarf.shared</groupId>
