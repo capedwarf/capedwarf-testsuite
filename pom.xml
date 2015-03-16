@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <version.capedwarf>2.0.0.CR5</version.capedwarf>
+        <version.capedwarf>2.0.0.CR6</version.capedwarf>
         <!-- Deps -->
         <version.jboss.wildfly>8.2.0.Final</version.jboss.wildfly>
         <version.org.jboss.xnio>3.3.0.Final</version.org.jboss.xnio>
