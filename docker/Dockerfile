@@ -7,12 +7,12 @@ ENV WILDFLY_VERSION 8.2.0.Final
 # Set the CapeDwarf env variable
 ENV CAPEDWARF_VERSION 2.0.0.CR6
 
-RUN mkdir /opt/jboss/capedwarf
 RUN cd /opt/jboss
 
 # Download & unzip latest CapeDwarf
 RUN curl http://download.jboss.org/capedwarf/CapeDwarf_WildFly_$CAPEDWARF_VERSION.zip -o capedwarf_$CAPEDWARF_VERSION.zip
 RUN unzip capedwarf_$CAPEDWARF_VERSION.zip -d /opt/jboss
+RUN rm /opt/jboss/capedwarf_$CAPEDWARF_VERSION.zip
 RUN mv CapeDwarf_WildFly_$CAPEDWARF_VERSION capedwarf
 
 # Set the JBOSS_HOME env variable
