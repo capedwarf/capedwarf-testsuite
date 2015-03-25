@@ -10,4 +10,5 @@ tools/transaction.log
 embedded/target/
 embedded/transaction.log
 embedded/server.log*
+cluster-tests/velocity.log
 

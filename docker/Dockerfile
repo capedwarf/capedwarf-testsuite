@@ -15,6 +15,8 @@ RUN unzip capedwarf_$CAPEDWARF_VERSION.zip -d /opt/jboss
 RUN rm /opt/jboss/capedwarf_$CAPEDWARF_VERSION.zip
 RUN mv CapeDwarf_WildFly_$CAPEDWARF_VERSION capedwarf
 
+ADD standalone-capedwarf-docker.xml /opt/jboss/capedwarf/standalone/configuration/
+
 # Set the JBOSS_HOME env variable
 ENV JBOSS_HOME /opt/jboss/capedwarf
 
@@ -23,4 +25,4 @@ EXPOSE 8080
 
 # Set the default command to run on boot
 # This will boot CapeDwarf in the standalone mode and bind to all interface
-CMD ["/opt/jboss/capedwarf/bin/standalone.sh", "-b", "0.0.0.0", "-c", "standalone-capedwarf-modules.xml"]
+CMD ["/opt/jboss/capedwarf/bin/standalone.sh", "-c", "standalone-capedwarf-docker.xml"]
