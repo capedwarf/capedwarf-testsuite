@@ -10,18 +10,19 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jboss.capedwarf.testsuite</groupId>
     <artifactId>capedwarf-testsuite</artifactId>
-    <version>2.0.0-SNAPSHOT</version>
+    <version>3.0.0-SNAPSHOT</version>
     <name>CapeDwarf - Integration Testsuite</name>
     <packaging>pom</packaging>
 
     <properties>
-        <version.capedwarf>2.0.0.CR6</version.capedwarf>
+        <version.capedwarf>3.0.0.Beta1</version.capedwarf>
         <!-- Deps -->
-        <version.jboss.wildfly>8.2.0.Final</version.jboss.wildfly>
+        <version.org.wildfly>9.0.0.Beta2</version.org.wildfly>
+        <version.org.wildfly.arquillian>1.0.0.Alpha5</version.org.wildfly.arquillian>
         <version.org.jboss.xnio>3.3.0.Final</version.org.jboss.xnio>
-        <version.org.jboss.capedwarf.shared>2.0.0-SNAPSHOT</version.org.jboss.capedwarf.shared>
-        <version.org.jboss.as.capedwarf>2.0.0-SNAPSHOT</version.org.jboss.as.capedwarf>
-        <version.org.jboss.capedwarf>2.0.0-SNAPSHOT</version.org.jboss.capedwarf>
+        <version.org.jboss.capedwarf.shared>3.0.0-SNAPSHOT</version.org.jboss.capedwarf.shared>
+        <version.org.jboss.as.capedwarf>3.0.0-SNAPSHOT</version.org.jboss.as.capedwarf>
+        <version.org.jboss.capedwarf>3.0.0-SNAPSHOT</version.org.jboss.capedwarf>
         <!-- GAE TCK -->
         <version.com.google.appengine.tck>1.0.0-SNAPSHOT</version.com.google.appengine.tck>
         <!-- GAE ARQ -->
@@ -29,29 +30,28 @@
         <!-- External deps -->
         <version.com.google.appengine>1.9.18</version.com.google.appengine>
         <version.com.google.appengine.managed>1.9.17</version.com.google.appengine.managed>
-        <version.com.google.guava>15.0</version.com.google.guava>
+        <version.com.google.guava>18.0</version.com.google.guava>
         <version.org.apache.ant>1.8.2</version.org.apache.ant>
-        <version.org.apache.httpcomponents>4.3.1</version.org.apache.httpcomponents>
-        <version.org.apache.lucene>3.6.2</version.org.apache.lucene>
+        <version.org.apache.httpcomponents>4.3.6</version.org.apache.httpcomponents>
+        <version.org.apache.lucene>4.10.4</version.org.apache.lucene>
         <version.org.bouncycastle>1.50</version.org.bouncycastle>
         <version.org.codehaus.exec>1.2.1</version.org.codehaus.exec>
-        <version.org.hibernate.search>4.5.1.Final</version.org.hibernate.search>
-        <version.org.hibernate.hql>1.0.0.Alpha6</version.org.hibernate.hql>
-        <version.org.jgroups>3.4.5.Final</version.org.jgroups>
-        <version.org.infinispan>6.0.2.Final</version.org.infinispan>
-        <version.org.jboss.jandex>1.2.1.Final</version.org.jboss.jandex>
+        <version.org.hibernate.search>5.1.1.Final</version.org.hibernate.search>
+        <version.org.hibernate.hql>1.1.0.Final</version.org.hibernate.hql>
+        <version.org.jgroups>3.6.2.Final</version.org.jgroups>
+        <version.org.infinispan>7.2.0.Beta1</version.org.infinispan>
+        <version.org.jboss.jandex>1.2.2.Final</version.org.jboss.jandex>
         <version.org.jboss.maven.transformer>1.0.0.Beta5</version.org.jboss.maven.transformer>
         <version.org.jivesoftware.smack>3.1.0</version.org.jivesoftware.smack>
         <version.javax.jai>1.1.1</version.javax.jai>
         <version.org.geotoolkit>3.21</version.org.geotoolkit>
         <version.javassist>3.18.1-GA</version.javassist>
         <version.antlr>3.1</version.antlr>
-        <version.jboss.wildfly.mailra>1.0.0.Alpha3</version.jboss.wildfly.mailra>
+        <version.org.wildfly.mailra>1.0.0.Alpha3</version.org.wildfly.mailra>
         <version.org.quartz>2.2.1</version.org.quartz>
 
-        <version.org.picketbox>4.0.20.Final</version.org.picketbox>
+        <version.org.picketbox>4.9.0.Beta2</version.org.picketbox>
         <version.org.picketbox.picketbox-commons>1.0.0.final</version.org.picketbox.picketbox-commons>
-        <version.org.picketlink>2.1.10.Final</version.org.picketlink>
         <version.org.picketlink.social>2.5.2.Final</version.org.picketlink.social>
         <version.org.openid4java>0.9.6</version.org.openid4java>
         <version.net.sourceforge.nekohtml>1.9.20</version.net.sourceforge.nekohtml>
@@ -61,7 +61,7 @@
         <version.javax.jpa2>1.0.0.Final</version.javax.jpa2>
         <version.org.jboss.spec.javax.servlet.api>1.0.0.Final</version.org.jboss.spec.javax.servlet.api>
         <version.junit>4.11</version.junit>
-        <version.arquillian>1.1.5.Final</version.arquillian>
+        <version.arquillian>1.1.7.Final</version.arquillian>
         <version.org.jboss.arquillian.graphene2>2.0.3.Final</version.org.jboss.arquillian.graphene2>
         <version.metainf>1.1</version.metainf>
         <!-- DataNucleus -->
@@ -90,7 +90,7 @@
         <!-- Testing Objectify -->
         <version.objectify>4.0rc2</version.objectify>
         <!-- Testing REST -->
-        <version.org.jboss.resteasy>3.0.10.Final</version.org.jboss.resteasy>
+        <version.org.jboss.resteasy>3.0.11.Final</version.org.jboss.resteasy>
         <!-- Assembly -->
         <version.assembly.maven.plugin>2.4</version.assembly.maven.plugin>
         <!-- Needs to be set explicitely to match with org.jacoco:org.jacoco.ant - see testsuite. -->
@@ -849,9 +849,9 @@
             </dependency>
 
             <dependency>
-                <groupId>org.wildfly</groupId>
+                <groupId>org.wildfly.arquillian</groupId>
                 <artifactId>wildfly-arquillian-container-managed</artifactId>
-                <version>${version.jboss.wildfly}</version>
+                <version>${version.org.wildfly.arquillian}</version>
                 <scope>test</scope>
             </dependency>
 
@@ -882,13 +882,31 @@
 
             <dependency>
                 <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-analyzers</artifactId>
+                <artifactId>lucene-analyzers-common</artifactId>
                 <version>${version.org.apache.lucene}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.apache.lucene</groupId>
                 <artifactId>lucene-memory</artifactId>
+                <version>${version.org.apache.lucene}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-facet</artifactId>
+                <version>${version.org.apache.lucene}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-queries</artifactId>
+                <version>${version.org.apache.lucene}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-queryparser</artifactId>
                 <version>${version.org.apache.lucene}</version>
             </dependency>
 
@@ -954,6 +972,18 @@
 
             <dependency>
                 <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-search-serialization-avro</artifactId>
+                <version>${version.org.hibernate.search}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate.hql</groupId>
+                <artifactId>hibernate-hql-lucene</artifactId>
+                <version>${version.org.hibernate.hql}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-search-infinispan</artifactId>
                 <version>${version.org.hibernate.search}</version>
             </dependency>
@@ -985,6 +1015,12 @@
             <dependency>
                 <groupId>org.infinispan</groupId>
                 <artifactId>infinispan-query</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-objectfilter</artifactId>
                 <version>${version.org.infinispan}</version>
             </dependency>
 
@@ -1062,20 +1098,20 @@
 
             <dependency>
                 <groupId>org.wildfly</groupId>
-                <artifactId>wildfly-clustering-infinispan</artifactId>
-                <version>${version.jboss.wildfly}</version>
+                <artifactId>wildfly-clustering-infinispan-spi</artifactId>
+                <version>${version.org.wildfly}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.wildfly</groupId>
                 <artifactId>mail-ra-api</artifactId>
-                <version>${version.jboss.wildfly.mailra}</version>
+                <version>${version.org.wildfly.mailra}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.wildfly</groupId>
                 <artifactId>mail-ra-impl</artifactId>
-                <version>${version.jboss.wildfly.mailra}</version>
+                <version>${version.org.wildfly.mailra}</version>
             </dependency>
 
             <dependency>
