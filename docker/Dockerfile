@@ -2,10 +2,10 @@
 FROM jboss/base-jdk:7
 
 # Set the WILDFLY_VERSION env variable
-ENV WILDFLY_VERSION 8.2.0.Final
+ENV WILDFLY_VERSION 8.2.1.Final
 
 # Set the CapeDwarf env variable
-ENV CAPEDWARF_VERSION 2.0.0.CR6
+ENV CAPEDWARF_VERSION 2.0.1.Final
 
 RUN cd /opt/jboss
 
