@@ -60,7 +60,7 @@ import org.jboss.arquillian.test.spi.annotation.TestScoped;
  * @author <a href="mailto:ales.justin@jboss.org">Ales Justin</a>
  */
 public class OverrideObserver {
-    private final Logger log = Logger.getLogger(OverrideExtension.class.getName());
+    private final Logger log = Logger.getLogger(OverrideObserver.class.getName());
 
     public static final String EXTENSION_NAME = "override";
     public static final String EXTENSION_PROPERTY_EXP = "expression";
