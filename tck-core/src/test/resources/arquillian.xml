@@ -14,7 +14,7 @@
         </configuration>
     </container>
 
-    <extension qualifier="override">
+    <extension qualifier="governor-ignore">
         <property name="methods_1">com.google.appengine.tck.misc.env.EnvVariablesTest#testEnvironmentVariables</property>
     </extension>
 

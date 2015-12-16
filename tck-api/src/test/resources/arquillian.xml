@@ -14,7 +14,7 @@
         </configuration>
     </container>
 
-    <extension qualifier="override">
+    <extension qualifier="governor-ignore">
         <property name="methods_1">com.google.appengine.tck.datastore.ListTest#testStrFilter</property>
         <property name="methods_2">com.google.appengine.tck.datastore.ListTest#testIntFilter</property>
         <property name="methods_3">com.google.appengine.tck.datastore.QueryBasicsTest#testDefaultSortOrderIsDefinedByIndexDefinition</property>

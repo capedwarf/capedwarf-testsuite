@@ -65,8 +65,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.jboss.capedwarf.testsuite</groupId>
-            <artifactId>arquillian</artifactId>
+            <groupId>org.arquillian.extension</groupId>
+            <artifactId>arquillian-governor-ignore</artifactId>
         </dependency>
 
         <dependency>
