@@ -31,7 +31,7 @@
         <version.com.google.appengine.managed>1.9.31</version.com.google.appengine.managed>
         <version.com.google.guava>15.0</version.com.google.guava>
         <version.org.apache.ant>1.8.2</version.org.apache.ant>
-        <version.org.apache.httpcomponents>4.3.1</version.org.apache.httpcomponents>
+        <version.org.apache.httpcomponents>4.5.1</version.org.apache.httpcomponents>
         <version.org.apache.lucene>3.6.2</version.org.apache.lucene>
         <version.org.bouncycastle>1.50</version.org.bouncycastle>
         <version.org.codehaus.exec>1.2.1</version.org.codehaus.exec>
